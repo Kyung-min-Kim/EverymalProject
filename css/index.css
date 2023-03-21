@@ -1,0 +1,594 @@
+@charset "utf-8";
+* {
+  font: bold 40px "GwangyangB";
+  font-size: 15px;
+}
+.full {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+#first,
+#third {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.sideTitle,
+.sideTitleR {
+  position: relative;
+  width: 5.55%;
+  /* width: 110px; */
+  height: 100vh;
+  z-index: 1111;
+  /* z-index 추가 */
+}
+#first > .sideTitle1 {
+  background-color: #056cf2;
+}
+#first > .sideTitle h2 {
+  color: #f2efe9;
+  font-size: 2.3vw;
+  /* font-size: 32pt */
+  vertical-align: middle;
+  writing-mode: vertical-rl;
+  margin: 0 auto;
+  padding-top: 40%;
+}
+#first > img {
+  width: 26.6%;
+  height: 84%;
+  /* width: 560px;
+  height: 910px; */
+  position: relative;
+  /* position: absolute; */
+  top: 0;
+  transform: scaleX(-1);
+  left: 0;
+  /* left: 110px; */
+}
+#first h3 {
+  position: absolute;
+  left: 45%;
+  font-size: 3.1vw;
+  /* font-size: 48pt; */
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  top: 40%;
+}
+.mainBtn {
+  position: absolute;
+  top: 55%;
+  left: 47%;
+  width: 50%;
+}
+.findH {
+  display: inline-flex;
+  position: relative;
+  width: 30%;
+  margin-right: 1%;
+}
+.findH img {
+  top: -35%;
+  transform: translateY(35%);
+}
+.findH span {
+  font-size: 1.3vw;
+  /* font-size: 20pt */
+  color: #056cf2;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#second {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+}
+#second .sideTitle2 {
+  background-color: #fcb232;
+}
+#second .sideTitle2 > h2 > span {
+  color: #f2efe9;
+  writing-mode: horizontal-tb;
+}
+
+#second .sideTitle2 > h2 {
+  color: #f2efe9;
+  font-size: 2.3vw;
+  /* font-size: 32pt */
+  vertical-align: middle;
+  writing-mode: vertical-rl;
+  margin: 0 auto;
+  padding-top: 40%;
+}
+#second > img:first-of-type {
+  position: absolute;
+  top: 0;
+  left: 5.55%;
+  /* left: 110px */
+  height: 100vh;
+  width: 86%;
+}
+#second > section {
+  position: relative;
+  /* position: absolute */
+  display: flex;
+  /* display 추가 */
+  flex-direction: row;
+  /* flex-direction 추가 */
+  height: 48%;
+  /* height: 490px; */
+  top: -100%;
+  /* top: 0 */
+  margin-left: 5.5%;
+  /* margin-left추가 */
+  width: 82%;
+  /* width추가 */
+}
+.emergency {
+  display: flex;
+  /* display 추가 */
+  /*  position: absolute;
+      top: 0;
+      width: 100vh; 
+      삭제 함! */
+}
+.emergency > div {
+  flex: 1;
+  /* 여기 추가함 */
+}
+
+.emergency .textBtn {
+  position: relative;
+  width: 100%;
+  /* width 추가*/
+  height: auto;
+  /* height 추가 */
+  /* left: 14%
+      margin-top: 25
+      삭제 함! */
+}
+.secondText {
+  width: 55%;
+  /* width 추가 */
+  position: relative;
+  margin: 0 auto;
+  margin-top: 10%;
+  /* margin,margin-top 추가 */
+  /* margin: 12% 0 0 13%; 삭제 */
+}
+.secondText > span {
+  position: relative;
+  display: block;
+  margin-bottom: 1%;
+  font-size: 1.28vw;
+  /* font-size: 20pt; */
+}
+.textBtn > img {
+  position: relative;
+  /* position: absolute */
+  width: 3.2vh;
+  /* width: 32px */
+  height: 3vh;
+  /* height: 32px */
+  margin-left: 30.5%;
+  /* left: 18%삭제 후, margin-left 추가 */
+  margin-top: 5%;
+  /* top: 136%삭제 후, margin-top추가 */
+}
+.secondBtn {
+  position: relative;
+  /* position: absolute */
+  display: block;
+  /* display추가 */
+  width: 25vh;
+  height: 5.3vh;
+    /* width: 270px;
+  height: 58px; */
+  text-align: center;
+  font-size: 0.86vw;
+  /* font-size: 13pt */
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #fcb232;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 44%;
+  /* left: 30%삭제 후,margin-left추가 */
+  margin-top: -1%;
+  /* margin-top: 8% */
+  transform: translateX(-50%);
+  color: #f2efe9;
+}
+.animationBox1 {
+  position: relative;
+  /* position: absolute */
+  /*   top: 0;
+  left: 80%;
+  width: 100%;
+  height: 117%;
+  다 삭제 */
+}
+.animationBox1 > img {
+  position: relative;
+  /* position: absolute */
+  display: block;
+  width: 60%;
+  height: 95%;
+    /* width: 517px;
+  height: 517px; */
+  margin-top: 9%;
+  /* botton: 5%삭제 후, margin-top 추가 */
+  margin-left: 50%;
+  /* right: 0삭제 후, margin-left추가 */
+  /* right,bottom은 애니메이션 넣을거면 변경해줘야함 */
+}
+#mapImg {
+  position: absolute;
+  display: block;
+  width: 13%;
+  height: 24%;
+    /* width: 250px;
+  height: 250px; */
+  margin-top: -54%;
+  /* top:40%삭제 후, margin-top추가 */
+  margin-left: 41.5%;
+  /* left: 41.5%삭제 후, margin-left추가 */
+}
+.petTaxi {
+  display: flex;
+  /* display 추가 */
+  /*   position: relative;
+  top: 0;
+  width: 170vh;
+  다 삭제! */
+}
+.petTaxi > div {
+  flex: 1;
+  /* 이 부분 추가 */
+}
+.animationBox2 {
+  position: relative;
+  /*   top: 0;
+  width: 100%;
+  삭제! */
+}
+.animationBox2 > img {
+  position: relative;
+  /* positionL absolute */
+  display: block;
+  width: 63%;
+  height: 55%;
+    /* width: 557px;
+  height: 315px; */
+  margin-top: 30%;
+  /* top: 70vh삭제 후, margin-top 추가 */
+  /* 애니메이션 경우 위치값 변경 가능 */
+}
+.secondText2 {
+  position: relative;
+  /* position: absolute */
+  width: 55%;
+  /* width 추가 */
+  margin-top: 15%;
+  margin-left: 37%;
+  /*   top: 85%;
+  right: 4%;
+  삭제 후, margin-top, margin-left 추가*/
+}
+.secondBtn2 {
+  position: relative;
+  /* positionL absolute */
+  margin-top: 9%;
+  margin-left: 60%;
+    /* top: 143%;
+  left: 82%; 
+  삭제 후, margin-top, margin-left 추가 */
+}
+.textBtn2 {
+  position: relative;
+  /* 여기 추가됨 */
+}
+.textBtn2:last-of-type > img {
+  position: absolute;
+  width: 6%;
+  height: 10%;
+    /* width: 51px;
+  height: 47px; */
+  margin-left: 46.4%;
+  margin-top: 4.4%;
+  /*   left: 75%;
+  top: 163%;
+  삭제 후, margin-left, margin-top 추가 */
+}
+#second .sideTitleR1 {
+  position: absolute;
+  top: 0;
+  right: 5.55%;
+  /* 이거 %한번 확인하면서 해줘 여기서 에러나는듯 */
+  background-color: #056cf2;
+}
+#second .sideTitleR1 > p {
+  position: absolute;
+  color: #f2efe9;
+  font-size: 2.3vw;
+  /* font-size: 32pt */
+  vertical-align: middle;
+  writing-mode: vertical-rl;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 40%;
+}
+
+#third .sideTitle3 {
+  background-color: #f27f3d;
+}
+#third .sideTitle3 > h2 {
+  color: #f2efe9;
+  font-size: 2.3vw;
+  /* font-size: 32pt */
+  vertical-align: middle;
+  writing-mode: vertical-rl;
+  margin: 0 auto;
+  padding-top: 40%;
+}
+#third section {
+  display: flex;
+}
+#third .message {
+  position: relative;
+  width: 42%;
+  background-color: #fba16e;
+  height: 100vh;
+}
+.message > img {
+  position: relative;
+  transform: scaleX(-1);
+  /* left: -205px삭제 */
+  margin-left: -25.7%;
+  /* margin-left추가 */
+  margin-top: 40vh;
+  /* top: 40%삭제 */
+  /* margin-top추가 */
+  width: 60%;
+  height: 60%;
+  z-index: 10;
+}
+.chatBox {
+  position: relative;
+  /* position: absolute */
+  margin-top: 10%;
+  /* margin-left삭제 */
+}
+.chatBox p {
+  position: relative;
+  width: 70%;
+  /* width: 350px; */
+  height: 12.5vh;
+  /* height: 120px; */
+  font-size: 1vw;
+  /* font-size: 15pt */
+  vertical-align: middle;
+  letter-spacing: 0.2em;
+  border-radius: 40px;
+  margin-top: 3%;
+  /* margin-top: 10px */
+}
+.chatBox span {
+  position: relative;
+  display: inline-block;
+  margin-top: 16%;
+  /* top:50% 삭제 후, margin-top추가 */
+  margin-left: 52%;
+  /* left:50% 삭제 후, margin-left추가 */
+  transform: translate(-50%, -50%);
+  width: 85%;
+}
+.chatBox .question {
+  position: relative;
+  background-color: #f2efe9;
+  margin-left: -40%;
+  /* margin-left: 10% */
+}
+.chatBox .answer {
+  position: relative;
+  background-color: #f27f3d;
+  margin-left: 20%;
+  /* margin-left: 100% */
+}
+.messageText {
+  position: relative;
+  width: 42%;
+  height: 100vh;
+  margin: 0 auto;
+  /* height,margin 추가 */
+}
+.thirdTitle {
+  position: relative;
+  margin-top: 25%;
+  /* top: 25%삭제 후, margin-top추가 */
+  margin-left: 16%;
+  /* left: 15%삭제 후, margin-left추가 */
+  height: 15%;
+  /* height: 120px */
+  width: 100%;
+  /* width: 75% */
+  font-size: 2vw;
+  /* font-size: 30pt */
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  letter-spacing: 0.08em;
+  /* letter-spacing: 0.1em */
+}
+.thirdTitle .color {
+  color: #f27f3d;
+}
+.showQ {
+  position: absolute;
+  font-size: 1.3vw;
+  /* font-size: 22pt */
+  width: 25%;
+  /* width: 12% */
+  text-align: right;
+  height: 12%;
+  /* height: 120px */
+  margin-top: 55%;
+  /* top: 48%삭제 후, margin-top추가 */
+  margin-left: 20%;
+  /* margin-left: 8% */
+}
+.showQ:last-of-type {
+  margin-left: 55%;
+  /* margin-left: 20% */
+}
+.showQ > p:last-of-type {
+  margin-top: 9%;
+  /* margin-top: 20px */
+  text-align: right;
+  color: #f27f3d;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+.messageText .goQ {
+  position: absolute;
+  /* position: relative */
+  display: block;
+  /* display추가 */
+  width: 25%;
+  /* width: 250px */
+  height: 5.5%;
+  /* height: 60px */
+  border-radius: 5px;
+  background-color: #f27f3d;
+  border: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 80%;
+  /* top:70%삭제 후, margin-top추가 */
+  margin-left: 38%;
+  /* left: -34%삭제 후, margin-left추가 */
+}
+.goQ p {
+  font-size: 1.15vw;
+  /* font-size: 16pt */
+  color: #f2efe9;
+}
+#third .sideTitleR1,
+.sideTitleR2 {
+  position: relative;
+  top: 0;
+  background-color: #056cf2;
+  /* right:110px 삭제 */
+}
+#third .sideTitleR2 {
+  margin-right: 0;
+  /* right:0 삭제 후, margin-right 추가 */
+  background-color: #fcb232;
+}
+#third .sideTitleR1 > p,
+#third .sideTitleR2 > p {
+  position: relative;
+  /* position: absolute */
+  color: #f2efe9;
+  font-size: 2.3vw;
+  /* font-size: 32pt */
+  vertical-align: middle;
+  writing-mode: vertical-rl;
+  margin: 0 auto;
+  margin-left: 50%;
+  /* left: 50%삭제 후, margin-left추가 */
+  transform: translateX(-50%);
+  margin-top: 40%;
+}
+#third .sideTitleR2 > p > span {
+  color: #f2efe9;
+  writing-mode: horizontal-tb;
+}
+.chatbot {
+  position: absolute;
+  border: 1px solid blue;
+  z-index: 2000;
+  margin-top: 90vh;
+  /* margin-top: 45% */
+  margin-left: 95.6%;
+  /* margin-left 추가 */
+  /* margin-right 삭제 */
+  /* right 삭제 */
+}
+.chatbot img {
+  position: absolute;
+  width: 7vh;
+  /* width: 65px */
+  height: 7vh;
+  /* height: 68px */
+  object-fit: cover;
+}
+
+/* 
+#first,
+#second {
+  display: none;
+}
+.sideTitle2 > h1,
+.sideTitle1 > h1 {
+  display: none;
+} 
+얘네 삭제 함!*/
+
+#first {
+  /* display: none; */
+}
+#second {
+  /* display: none; */
+}
+#third {
+  /* display: none; */
+}
+#first {
+  z-index: 99999;
+  background-color: white;
+}
+#second {
+  z-index: 999999;
+  background-color: white;
+  left: -82%;
+}
+#third {
+  left: -88%;
+  z-index: 9999999;
+  background-color: white;
+}
+#first > img {
+  left: 330px;
+}
+#second > img:first-of-type {
+  left: 12%;
+}
+#second > section {
+  left: 3%;
+}
+.animationBox1 > img {
+  right: 150px;
+}
+.animationBox2 > img {
+  left: 250px;
+}
+.sideTitle,
+.sideTitleR {
+  width: 115px;
+}
+.sideTitle4 {
+  z-index: 99999999;
+  position: absolute;
+  background-color: #f27f3d;
+}
+.sideTitle4 > h2 {
+  color: #f2efe9;
+  font-size: 2.3vw;
+  vertical-align: middle;
+  writing-mode: vertical-rl;
+  margin: 0 auto;
+  padding-top: 40%;
+}
+.sideTitle2 > h1,
+.sideTitle1 > h1 {
+  /* display: none; */
+}

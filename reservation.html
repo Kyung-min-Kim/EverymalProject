@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1:1 온라인 상담</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/reservation.css" />
+  </head>
+
+  <body>
+    <div id="container_sub">
+      <header id="header">
+        <nav>
+          <ul class="topNav">
+            <li><a href="#">1:1온라인 상담</a></li>
+            <li><a href="#">24시간 응급실•펫택시</a></li>
+            <li><a href="#">예약하기</a></li>
+            <li><a href="#">내 주변 병원찾기</a></li>
+            <li><a href="#">로그인•회원가입</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h2 class="pagetitlte">예약하기</h2>
+      <section id="sidebar_Area">
+        <div class="sidebars" id="sb_sidebar">
+          <p class="sidetitles">서브페이지 이름</p>
+        </div>
+      </section>
+      <div class="background"></div>
+      <div class="Reservation">
+        <form action="#" name="myInfoForm" method="post">
+          <fieldset>
+            <legend>예약하기 폼</legend>
+            <p>
+              <label class="infoTitle" for="name">이름</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="예약자 성명"
+              />
+            </p>
+            <p>
+              <label class="infoTitle" for="tel">연락처</label>
+              <input type="tel" id="tel1" name="tel1" value="010" />
+              <input type="tel" id="tel" name="tel" />
+            </p>
+            <p>
+              <label class="infoTitle" for="petname">반려동물 이름</label>
+              <input type="text" id="petname" name="petname" />
+              <input type="radio" id="bringPetInfo" name="bringPetInfo" />내
+              반려동물 정보 불러오기
+            </p>
+            <p>
+              <label class="infoTitle" for="race">동물 종</label>
+              <select name="petRace" id="petRace">
+                <option value="dog">개</option>
+                <option value="cat">고양이</option>
+                <option value="smallAnimal">소동물</option>
+                <option value="reptile">파충류</option>
+                <option value="fish">어류</option>
+                <option value="etc">조류</option>
+              </select>
+              <input type="text" id="petRace" name="petRace" />
+              <span>※ 선택창에 없는 경우 입력해주세요.</span>
+            </p>
+            <p>
+              <label class="infoTitle" for="age">나이</label>
+              <input type="number" id="age" name="age" />
+            </p>
+            <p>
+              <span class="genderC">성별</span>
+              <label class="infoTitle2" for="genderChoice"></label>
+              <input
+                type="radio"
+                id="genderChoice"
+                name="gender"
+                value="male"
+              />♀
+              <label class="infoTitle2" for="genderChoice"></label>
+              <input
+                type="radio"
+                id="genderChoice"
+                name="gender"
+                value="female"
+              />♂︎
+            </p>
+            <p>
+              <label class="infoTitle" for="hospitalName">병원 이름</label>
+              <input type="text" id="hospitalName" name="hospitalName" />
+            </p>
+            <p>
+              <label class="infoTitle" for="reservationDate"
+                >희망 예약날짜</label
+              >
+              <input type="text" id="datepicker" />
+            </p>
+            <p>
+              <label class="infoTitle" for="reservationTime"
+                >희망 예약시간</label
+              >
+              <input type="text" id="timepicker" />
+            </p>
+            <p>
+              <label class="infoTitle" for="medicalDep">진료 과목</label>
+              <select name="medicalDep" id="medicalDep">
+                <option value="hosDep1">내과</option>
+                <option value="hosDep2">외과</option>
+                <option value="hosDep3">안과</option>
+                <option value="hosDep4">치과</option>
+                <option value="hosDep5">이비인후과</option>
+                <option value="hosDep6">정형외과</option>
+                <option value="hosDep7">피부과</option>
+                <option value="hosDep8">심장외과</option>
+                <option value="hosDep9">종양외과</option>
+                <option value="hosDep9">예방접종</option>
+                <option value="hosDep9">재활치료</option>
+              </select>
+            </p>
+            <p>
+              <label class="infoTitle notice" for="notice">요구사항</label>
+              <textarea
+                style="resize: none"
+                placeholder="반려동물의 특이사항이나 주의할 점을 적어주세요."
+              ></textarea>
+            </p>
+            <p>
+              <label class="infoTitle personalInfoTitle" for="personalInfo"
+                >개인정보 수집 및 이용 동의</label
+              >
+              <span class="personalText"
+                >□ 개인정보의 수집 및 이용에 관한 사항<br />
+                - 수집하는 개인정보 항목 (이력서 양식 내용 일체) : 성명,
+                주민등록번호, 전화번호, 주소, 이메일, 가족관계, 학력사항,
+                경력사항, 자격사항 등과 그 外 이력서 기재 내용 일체<br />
+                - 개인정보의 이용 목적 : 수집된 개인정보를 사업장 신규 채용 서류
+                심사 및 인사서 류로 활용하며, 목적 외의 용도로는 사용하지
+                않습니다. <br />
+                □ 개인정보의 보관 및 이용 기간<br />- 귀하의 개인정보를 다음과
+                같이 보관하며, 수집, 이용 및 제공목적이 달성된 경우 [개인정보
+                보호법] 제21조에 따라 처리합니다.
+              </span>
+              <div class="radioInfo">
+                <label class="infoTitle2" for="personalInfoOk"></label>
+                <input
+                type="radio"
+                id="personalInfo"
+                name="personalInfo"
+                value="Yes"
+                checked
+                />동의
+                <label class="infoTitle2" for="personalInfoNo"></label>
+                <input
+                type="radio"
+                id="personalInfo"
+                name="personalInfo"
+                value="No"
+                />비동의
+              </div>
+            </p>
+            <button class="btnOk" type="submit">예약하기</button>
+          </fieldset>
+        </form>
+      </div>
+
+      <!-- fooooooooooooooooooooooooooooooooooooooooooooooooooooooter -->
+      <footer>
+        <ul class="bottomNav">
+          <li><a href="#">1:1온라인 상담</a></li>
+          <li><a href="#">24시간 응급실•펫택시</a></li>
+          <li><a href="#">예약하기</a></li>
+          <li><a href="#">내 주변 병원찾기</a></li>
+          <li><a href="#">로그인•회원가입</a></li>
+        </ul>
+        <div class="table">
+          <address>
+            <p>이름</p>
+            <p>서울특별시 종로구 중구 12길 33층 123호</p>
+            <p>공동대표. 김경민, 이초롱, 나은비, 황치연, 김소중</p>
+          </address>
+          <div class="custom">
+            <p>고객문의센터</p>
+            <a href="tel:010-111-2222"
+              >T. 1111-2222 (10:00 - 19:00 / 점심시간 12:30 - 13:30)</a
+            >
+            <a href="mailto:superman@test.com">E. everymal@gmail.com</a>
+          </div>
+          <div class="footBtn">
+            <a href="#">개인정보 처리방침</a>
+            <a href="#">이용약관</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
