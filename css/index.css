@@ -1,0 +1,75 @@
+@charset "utf-8";
+* {
+  font: bold 40px "GwangyangB";
+  font-size: 15px;
+}
+.full {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+#first {
+  position: absolute;
+  width: 100%;
+  height: 929px;
+}
+.sideTitle {
+  position: absolute;
+  width: 110px;
+  height: 929px;
+}
+.sideTitle1 {
+  background-color: #056cf2;
+}
+.sideTitle > h1 {
+  color: #f2efe9;
+  font-size: 32pt;
+  vertical-align: middle;
+  writing-mode: vertical-rl;
+  margin: 0 auto;
+  padding-top: 40%;
+}
+#first > img {
+  width: 550px;
+  height: 900px;
+  position: absolute;
+  top: 0;
+  transform: scaleX(-1);
+  left: 110px;
+}
+#first h2 {
+  position: absolute;
+  left: 45%;
+  font-size: 48pt;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  top: 40%;
+}
+.mainBtn {
+  position: absolute;
+  top: 55%;
+  left: 47%;
+  width: 50%;
+}
+.findH {
+  display: inline-flex;
+  position: relative;
+  width: 30%;
+  margin-right: 1%;
+}
+.findH img {
+  top: -35%;
+  transform: translateY(35%);
+}
+.findH span {
+  font-size: 20pt;
+  color: #056cf2;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+#second,
+#third {
+  display: none;
+}
+.sideTitle2 > h1,
+.sideTitle3 > h1 {
+  display: none;
+}
