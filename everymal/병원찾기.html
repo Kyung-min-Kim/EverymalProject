@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>병원 찾기</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/병원찾기.css" />
+</head>
+
+<body>
+  <div id="container">
+    <header id="header">
+      <nav>
+        <ul class="topNav">
+          <li><a href="#">1:1온라인 상담</a></li>
+          <li><a href="#">24시간 응급실•펫택시</a></li>
+          <li><a href="#">예약하기</a></li>
+          <li><a href="#">내 주변 병원찾기</a></li>
+          <li><a href="#">로그인•회원가입</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- 페이지 타이틀 -->
+    <h2 id="hp_pageTitle">동물병원 찾기</h2>
+
+    <section id="sidebar_Area">
+      <div class="sidebars" id="hp_sidebar"></div>
+
+      <!-- 보류 -->
+    </section>
+
+    <section id="chatbot_Area">
+      <div>
+        <a href="#" class="chatbot">
+          <img src="images/chatbot.png" alt="챗봇" />
+        </a>
+        <a href="#" class="goTopBtn">
+          <img src="images/topbtn.png" alt="페이지 최상단으로 이동" />
+        </a>
+      </div>
+    </section>
+    <!-- ===============필터 시작 ================================ -->
+    <section id="filter_Area">
+      <h3 class="hidden">동물병원 맞춤 필터 선택하기</h3>
+
+      <div class="category AnimalChoice">
+        <span class="categoryName">동물</span>
+        <form name="" action="" method="" class="overform">
+          <fieldset>
+            <legend class="hidden">동물 분류</legend>
+            <label class=""><input type="radio" name="ani_choice" value="" /><span>개</span></label>
+            <label class=""><input type="radio" name="ani_choice" value="" /><span>고양이</span></label>
+            <label class=""><input type="radio" name="ani_choice" value="" /><span>파충류</span></label>
+            <label class=""><input type="radio" name="ani_choice" value="" /><span>어류</span></label>
+            <label class=""><input type="radio" name="ani_choice" value="" /><span>특수동물</span></label>
+          </fieldset>
+        </form>
+      </div>
+      <div class="category medicalDepartment">
+        <span class="categoryName">진료과목</span>
+        <form name="" action="" method="" class="overform">
+          <fieldset>
+            <legend class="hidden">진료 과목</legend>
+            <label class="">
+              <input type="checkbox" name="" value="" /><span>진료과목1</span>
+            </label>
+            <label class="">
+              <input type="checkbox" name="" value="" /><span>진료과목2</span>
+            </label>
+            <label class="">
+              <input type="checkbox" name="" value="" /><span>진료과목3</span>
+            </label>
+            <label class="">
+              <input type="checkbox" name="" value="" /><span>진료과목4</span>
+            </label>
+            <label class="">
+              <input type="checkbox" name="" value="" /><span>진료과목5</span>
+            </label>
+            <label class="">
+              <input type="checkbox" name="" value="" /><span>진료과목6</span>
+            </label>
+            <label class="">
+              <input type="checkbox" name="" value="" /><span>진료과목7</span>
+            </label>
+            <label class="">
+              <input type="checkbox" name="" value="" /><span>진료과목8</span>
+            </label>
+            <label class="">
+              <input type="checkbox" name="" value="" /><span>진료과목9</span>
+            </label>
+            <label class="">
+              <input type="checkbox" name="" value="" /><span>진료과목10</span>
+            </label>
+          </fieldset>
+        </form>
+      </div>
+      <div class="category clinicServices">
+        <span class="categoryName">전문 치료 • 접종</span>
+        <form name="" action="" method="" class="overform">
+          <fieldset>
+            <legend class="hidden">전문 치료 • 접종</legend>
+            <label class=""><input type="checkbox" name="" value="" /><span>치료1</span></label>
+            <label class=""><input type="checkbox" name="" value="" /><span>치료2</span></label>
+            <label class=""><input type="checkbox" name="" value="" /><span>치료3</span></label>
+            <label class=""><input type="checkbox" name="" value="" /><span>치료4</span></label>
+            <label class=""><input type="checkbox" name="" value="" /><span>치료5</span></label>
+            <label class=""><input type="checkbox" name="" value="" /><span>치료6</span></label>
+            <label class=""><input type="checkbox" name="" value="" /><span>치료7</span></label>
+            <label class=""><input type="checkbox" name="" value="" /><span>치료8</span></label>
+            <label class=""><input type="checkbox" name="" value="" /><span>치료9</span></label>
+            <label class=""><input type="checkbox" name="" value="" /><span>치료10</span></label>
+          </fieldset>
+        </form>
+      </div>
+      <div class="category operatingTime">
+        <span class="categoryName">진료 시간</span>
+        <form name="" action="" method="">
+          <fieldset>
+            <legend class="hidden">진료 시간</legend>
+            <label class=""><input type="checkbox" name="" value="" /><span>시간1</span></label>
+            <label class=""><input type="checkbox" name="" value="" /><span>시간2</span></label>
+            <label class=""><input type="checkbox" name="" value="" /><span>시간3</span></label>
+          </fieldset>
+        </form>
+      </div>
+
+      <button id="submitBtn">적용 하기</button>
+    </section>
+    <!-- ===============필터 끝 ===================================-->
+    <!-- =======================병원 목록 시작============================ -->
+
+    <section id="hospitalList_Area">
+      <h3 class="hidden">동물병원 리스트</h3>
+      <div class="hp_sort">
+        <select name="" id="">
+          <option value="" label="정렬기준1">정렬기준1</option>
+          <option value="" label="정렬기준2">정렬기준2</option>
+        </select>
+      </div>
+      <div class="hp_container">
+        <ul id="hp_list">
+          <li class="hp_con">
+            <a href="#" class="">
+              <img src="images/Rectangle 77.png" alt="00병원 이미지" class="hp_Thumbnail" />
+              <div class="hp_conInfo">
+                <p class="hp_titles">00동물 병원</p>
+                <span class="hp_tellNumber">전화 | 010-3269-0268</span>
+                <span class="hp_addressInfo">주소 | 서울시 종로구</span>
+                <span class="hp_seeMore">자세히 보기</span>
+              </div>
+            </a>
+          </li>
+          <li class="hp_con">
+            <a href="#" class="">
+              <img src="images/Rectangle 77.png" alt="00병원 이미지" class="hp_Thumbnail" />
+              <div class="hp_conInfo">
+                <p class="hp_titles">00동물 병원</p>
+                <span class="hp_tellNumber">전화 | 010-3269-0268</span>
+                <span class="hp_addressInfo">주소 | 서울시 종로구</span>
+                <span class="hp_seeMore">자세히 보기</span>
+              </div>
+            </a>
+          </li>
+          <li class="hp_con">
+            <a href="#" class="">
+              <img src="images/Rectangle 77.png" alt="00병원 이미지" class="hp_Thumbnail" />
+              <div class="hp_conInfo">
+                <p class="hp_titles">00동물 병원</p>
+                <span class="hp_tellNumber">전화 | 010-3269-0268</span>
+                <span class="hp_addressInfo">주소 | 서울시 종로구</span>
+                <span class="hp_seeMore">자세히 보기</span>
+              </div>
+            </a>
+          </li>
+          <li class="hp_con">
+            <a href="#" class="">
+              <img src="images/Rectangle 77.png" alt="00병원 이미지" class="hp_Thumbnail" />
+              <div class="hp_conInfo">
+                <p class="hp_titles">00동물 병원</p>
+                <span class="hp_tellNumber">전화 | 010-3269-0268</span>
+                <span class="hp_addressInfo">주소 | 서울시 종로구</span>
+                <span class="hp_seeMore">자세히 보기</span>
+              </div>
+            </a>
+          </li>
+          <li class="hp_con">
+            <a href="#" class="">
+              <img src="images/Rectangle 77.png" alt="00병원 이미지" class="hp_Thumbnail" />
+              <div class="hp_conInfo">
+                <p class="hp_titles">00동물 병원</p>
+                <span class="hp_tellNumber">전화 | 010-3269-0268</span>
+                <span class="hp_addressInfo">주소 | 서울시 종로구</span>
+                <span class="hp_seeMore">자세히 보기</span>
+              </div>
+            </a>
+          </li>
+          <li class="hp_con">
+            <a href="#" class="">
+              <img src="images/Rectangle 77.png" alt="00병원 이미지" class="hp_Thumbnail" />
+              <div class="hp_conInfo">
+                <p class="hp_titles">00동물 병원</p>
+                <span class="hp_tellNumber">전화 | 010-3269-0268</span>
+                <span class="hp_addressInfo">주소 | 서울시 종로구</span>
+                <span class="hp_seeMore">자세히 보기</span>
+              </div>
+            </a>
+          </li>
+          <li class="hp_con">
+            <a href="#" class="">
+              <img src="images/Rectangle 77.png" alt="00병원 이미지" class="hp_Thumbnail" />
+              <div class="hp_conInfo">
+                <p class="hp_titles">00동물 병원</p>
+                <span class="hp_tellNumber">전화 | 010-3269-0268</span>
+                <span class="hp_addressInfo">주소 | 서울시 종로구</span>
+                <span class="hp_seeMore">자세히 보기</span>
+              </div>
+            </a>
+          </li>
+          <li class="hp_con">
+            <a href="#" class="">
+              <img src="images/Rectangle 77.png" alt="00병원 이미지" class="hp_Thumbnail" />
+              <div class="hp_conInfo">
+                <p class="hp_titles">00동물 병원</p>
+                <span class="hp_tellNumber">전화 | 010-3269-0268</span>
+                <span class="hp_addressInfo">주소 | 서울시 종로구</span>
+                <span class="hp_seeMore">자세히 보기</span>
+              </div>
+            </a>
+          </li>
+          <li class="hp_con">
+            <a href="#" class="">
+              <img src="images/Rectangle 77.png" alt="00병원 이미지" class="hp_Thumbnail" />
+              <div class="hp_conInfo">
+                <p class="hp_titles">00동물 병원</p>
+                <span class="hp_tellNumber">전화 | 010-3269-0268</span>
+                <span class="hp_addressInfo">주소 | 서울시 종로구</span>
+                <span class="hp_seeMore">자세히 보기</span>
+              </div>
+            </a>
+          </li>
+          <li class="hp_con">
+            <a href="#" class="">
+              <img src="images/Rectangle 77.png" alt="00병원 이미지" class="hp_Thumbnail" />
+              <div class="hp_conInfo">
+                <p class="hp_titles">00동물 병원</p>
+                <span class="hp_tellNumber">전화 | 010-3269-0268</span>
+                <span class="hp_addressInfo">주소 | 서울시 종로구</span>
+                <span class="hp_seeMore">자세히 보기</span>
+              </div>
+            </a>
+          </li>
+          <li class="hp_con">
+            <a href="#" class="">
+              <img src="images/Rectangle 77.png" alt="00병원 이미지" class="hp_Thumbnail" />
+              <div class="hp_conInfo">
+                <p class="hp_titles">00동물 병원</p>
+                <span class="hp_tellNumber">전화 | 010-3269-0268</span>
+                <span class="hp_addressInfo">주소 | 서울시 종로구</span>
+                <span class="hp_seeMore">자세히 보기</span>
+              </div>
+            </a>
+          </li>
+          <li class="hp_con">
+            <a href="#" class="">
+              <img src="images/Rectangle 77.png" alt="00병원 이미지" class="hp_Thumbnail" />
+              <div class="hp_conInfo">
+                <p class="hp_titles">00동물 병원</p>
+                <span class="hp_tellNumber">전화 | 010-3269-0268</span>
+                <span class="hp_addressInfo">주소 | 서울시 종로구</span>
+                <span class="hp_seeMore">자세히 보기</span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- =======================병원 목록 끝============================ -->
+
+    <!-- fooooooooooooooooooooooooooooooooooooooooooooooooooooooter -->
+    <footer>
+      <ul class="bottomNav">
+        <li><a href="#">1:1온라인 상담</a></li>
+        <li><a href="#">24시간 응급실•펫택시</a></li>
+        <li><a href="#">예약하기</a></li>
+        <li><a href="#">내 주변 병원찾기</a></li>
+        <li><a href="#">로그인•회원가입</a></li>
+      </ul>
+      <div class="table">
+        <address>
+          <p>이름</p>
+          <p>서울특별시 종로구 중구 12길 33층 123호</p>
+          <p>공동대표. 김경민, 이초롱, 나은비, 황치연, 김소중</p>
+        </address>
+        <div class="custom">
+          <p>고객문의센터</p>
+          <a href="tel:010-111-2222">T. 1111-2222 (10:00 - 19:00 / 점심시간 12:30 - 13:30)</a>
+          <a href="mailto:superman@test.com">E. everymal@gmail.com</a>
+        </div>
+        <div class="footBtn">
+          <a href="#">개인정보 처리방침</a>
+          <a href="#">이용약관</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
