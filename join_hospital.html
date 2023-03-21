@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>동물병원 상세정보 페이지</title>
+    <link rel="stylesheet" href="css/hospital_detail.page2.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/join.css">
+  </head>
+  <body>
+    <div class="container">
+      <!--header시작-->
+      <header>
+        <nav>
+          <ul class="topNav">
+            <li><a href="#">1:1온라인 상담</a></li>
+            <li><a href="#">24시간 응급실•펫택시</a></li>
+            <li><a href="#">예약하기</a></li>
+            <li><a href="#">내 주변 병원찾기</a></li>
+            <li><a href="#">로그인•회원가입</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h2 class="pagetitlte">회원가입</h2>
+      <section id="sidebar_Area">
+      </section>
+      <!--header영역 끝-->
+      <!-- 개인 회원가입 시작 -->
+      <section id="memberArea" class="memberJoin">
+        <p class="formSign"><strong class="require">필수</strong>는 반드시 입력하여야 하는 항목입니다.</p>
+        <form action="#" method="post" id="joinForm" name="joinForm">
+            <fieldset>
+                <legend>회원가입 정보 입력 폼</legend>
+                <div id="hospital_form">
+                  <h2>병원정보</h2>
+                  <p>
+                    <label for="h_name">병원명<strong class="require">필수</strong></label>
+                    <input type="text" id="h_name" name="h_name" required placeholder="A동물병원">
+                  </p>
+                  <p>
+                    <label for="h_id">관리자아이디<strong class="require">필수</strong></label>
+                    <input type="text" id="h_id" name="h_id" required placeholder="everymal">
+                    <a href="#" class="idCheck greenbox">ID중복확인</a>
+                  </p>
+                  <p>
+                    <label for="h_password">비밀번호<strong class="require">필수</strong></label>
+                    <input type="password" id="h_password" name="h_password" required placeholder="영문/숫자 4~8자 이내">
+                  </p>
+                  <p>
+                    <label for="h_confirmPassword">비밀번호 확인<strong class="require">필수</strong></label>
+                    <input type="password" id="h_confirmPassword=" name="h_confirmPassword" required>
+                  </p>
+                  <p>
+                    <label for="lb_findIdent2">사업자등록번호</label>
+                    <input type=hidden name=C_Ident>
+                    <input type="text" id="lb_findIdent2" placeholder="사업자 등록번호 앞 세자리" name="work_no1" maxlength="3" class="work_no1"> - 
+                    <input type="text" placeholder="사업자 등록번호 가운데 두자리"name="work_no2" maxlength="2" class="work_no2"> - 
+                    <input type="text" placeholder="사업자 등록번호 뒤 다섯자리"name="work_no3" maxlength="5" class="work_no3">
+                  </p>
+                  <p>
+                    <label for="h_tel">병원 연락처</label>
+                    <input type="tel" id="h_tel" name="h_tel" maxlength="10" size="20" title="하이픈(-)은 입력할 수 없습니다." placeholder="입력 예) 021112222">
+                  </p>
+                  <p>
+                    <label for="h_address" class="labelAddress">병원 주소</label>
+                    <a href="#" class="findZipcode greenbox">우편번호 찾기</a>
+                    <input type="tel" id="h_zipcode" name="h_zipcode" maxlength="5" size="6" title="우편번호">
+                    <input type="text" id="h_address" name="h_address" maxlength="100" size="60" placeholder="입력 예) 서울특별시 종로구 중구 12길 33층 123호">
+                  </p>
+                  <p>
+                    <label for="h_email">병원 이메일<strong class="require">필수</strong></label>
+                    <input type="email" id="h_email=" name="h_email" size="30" required placeholder="입력 예) everymal@gmail.com">
+                  </p>
+                  <p>
+                    <label>병원영업일</label>
+                      <label for="open_24">24시간</label>
+                      <input type="checkbox" name="open_24" id="open_24">
+                      <label for="alwaysopen">연중무휴</label>
+                      <input type="checkbox" name="alwaysopen" id="alwaysopen">
+                  </p>
+                  <p>
+                    <label for="open_day">영업시간</label>
+                      <textarea name="open_day" id="open_day" cols="50" rows="10">
+ex) 예시를 참고해서 작성해주세요
+월요일 : 09:00 ~ 18:00(점심시간 13:00~14:00)
+화요일 : 09:00 ~ 18:00(점심시간 13:00~14:00)
+수요일 : 09:00 ~ 18:00(점심시간 13:00~14:00)
+목요일 : 09:00 ~ 18:00(점심시간 13:00~14:00)
+금요일 : 09:00 ~ 18:00(점심시간 13:00~14:00)
+토요일 : 09:00 ~ 14:00(점심시간 X)
+일요일 : 09:00 ~ 14:00(점심시간 X)
+</textarea>
+                  </p>
+                  <p>
+                    <label>진료동물 종류</label>
+                    <label for="dog">개</label>
+                    <input type="checkbox" name="dog" id="dog">
+                    <label for="cat">고양이</label>
+                    <input type="checkbox" name="cat" id="cat">
+                    <label for="rabbit">토끼</label>
+                    <input type="checkbox" name="rabbit" id="rabbit">
+                    <label for="fish">어류</label>
+                    <input type="checkbox" name="fish" id="fish">
+                    <label for="bird">조류</label>
+                    <input type="checkbox" name="bird" id="bird">
+                    <label for="hamster">소동물</label>
+                    <input type="checkbox" name="hamster" id="hamster">
+                    <label for="direct">직접입력</label>
+                    <input type="text" name="direct" id="direct" placeholder="목록에 없는 경우 직접 입력해주세요." size="30">
+                  </p>
+                  <p> 
+                    <label>진료과목</label>
+                    <label for="medical_department_gs">외과</label>  
+                    <input type="checkbox" name="medical_department_gs" id="medical_department_gs">
+                    <label for="medical_department_im">내과</label>
+                    <input type="checkbox" name="medical_department_im" id="medical_department_im"> 
+                    <label for="medical_department_em">응급의학과</label>
+                    <input type="checkbox" name="medical_department_em" id="medical_department_em">
+                    <label for="medical_department_rm">재활의학과</label>
+                    <input type="checkbox" name="medical_department_rm" id="medical_department_rm">
+                    <label for="medical_department_vac">예방접종</label>
+                    <input type="checkbox" name="medical_department_vac" id="medical_department_vac">
+                  </p>
+                  <p class="h_introduce">
+                    <label for="h_introduce">병원 소개글</label>
+                    <textarea name="h_introduce" id="h_introduce" cols="50" rows="5"></textarea>
+                  </p>
+                  <p class="mailing">
+                    <em>메일링 리스트 가입</em>
+                    <span>메일링리스트에 가입하시면 everymal의 뉴스레더를 받아보실 수 있습니다.</span>
+                    <label for="mailingOk">예</label>
+                    <input type="radio" id="mailingOk" name="mailing" value="Yes" checked>
+                    <label for="mailingNo">아니오</label>
+                    <input type="radio" id="mailingNo" name="mailing" value="No">
+                  </p>
+                </div>
+                <div class="btnJoinArea">
+                    <button type="submit" class="btnOk">회원가입</button>
+                    <button type="reset" class="btnCancle">초기화</button>
+                </div>
+            </fieldset>
+        </form>
+     </section>
+      <!-- 개인 회원가입 끝 -->
+      <!--푸터 시작-->
+      <footer>
+        <ul class="bottomNav">
+          <li><a href="#">1:1온라인 상담</a></li>
+          <li><a href="#">24시간 응급실•펫택시</a></li>
+          <li><a href="#">예약하기</a></li>
+          <li><a href="#">내 주변 병원찾기</a></li>
+          <li><a href="#">로그인•회원가입</a></li>
+        </ul>
+        <div class="table">
+          <address>
+            <p>이름</p>
+            <p>서울특별시 종로구 중구 12길 33층 123호</p>
+            <p>공동대표. 김경민, 이초롱, 나은비, 황치연, 김소중</p>
+          </address>
+          <div class="custom">
+            <p>고객문의센터</p>
+            <a href="tel:010-111-2222"
+              >T. 1111-2222 (10:00 - 19:00 / 점심시간 12:30 - 13:30)</a
+            >
+            <a href="mailto:superman@test.com">E. everymal@gmail.com</a>
+          </div>
+          <div class="footBtn">
+            <a href="#">개인정보 처리방침</a>
+            <a href="#">이용약관</a>
+          </div>
+        </div>
+      </footer>
+
+      <!--푸터끝-->
+    </div>
+  </body>
+</html>

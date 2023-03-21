@@ -1,0 +1,44 @@
+@charset "utf-8";
+* {
+  font: bold 40px "GwangyangB";
+  font-size: 15px;
+  color: #282727;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+#skip,
+.skip,
+legend {
+  display: none;
+}
+@font-face {
+  font-family: "Gwangyang";
+  src: url("../font/Gwangyang2/Gwangyang\ Sunshine\ Regular.ttf")
+    format("truetype");
+}
+@font-face {
+  font-family: "GwangyangB";
+  src: url("../font/Gwangyang2/Gwangyang\ Sunshine\ Bold.ttf")
+    format("truetype");
+}
+body {
+  width: 1920px;
+  height: auto;
+}
+ul.topNav {
+  position: absolute;
+  right: 0px;
+  width: 700px;
+  font: 12px normal;
+  margin-right: 5%;
+}
+.topNav li {
+  position: relative;
+  float: left;
+  margin: 2% 0 1% 8%;
+}
