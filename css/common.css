@@ -27,7 +27,7 @@ legend {
     format("truetype");
 }
 body {
-  width: 100%;
+  width: 1920px;
   height: auto;
 }
 ul.topNav {
@@ -36,7 +36,6 @@ ul.topNav {
   width: 700px;
   font: 12px normal;
   margin-right: 5%;
-  z-index: 999;
 }
 .topNav li {
   position: relative;
@@ -50,6 +49,8 @@ footer {
   margin-top: auto;
   background-color: #fba16e;
   font-size: 10pt;
+  bottom: -17px;
+  /* top: 300px; */
 }
 footer ul {
   position: relative;
