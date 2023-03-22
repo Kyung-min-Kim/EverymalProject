@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+  <body>
+    <div class="container">
+      <!--header시작-->
+      <header>
+        <nav>
+          <ul class="topNav">
+            <li><a href="#">1:1온라인 상담</a></li>
+            <li><a href="#">24시간 응급실•펫택시</a></li>
+            <li><a href="#">예약하기</a></li>
+            <li><a href="#">내 주변 병원찾기</a></li>
+            <li><a href="login.html">로그인•회원가입</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="sidebar_Area">
+        <div class="cidebars" id="hp_sidebar"></div>
+      </section>
+      <!--header영역 끝-->
+      <div id="contentArea">
+        <div id="loginArea">
+            <section class="login">
+                <h2>로그인</h2>
+                <form action="login.jsp" method="post" id="loginForm">
+                    <fieldset>
+                        <legend>회원 로그인 폼</legend>
+                        <p>
+                            <label for="userId">아이디</label>
+                            <input type="text" id="userId" name="userId" placeholder="아이디" required><!-- 속성이름과 값이 같으면 생략가능 -->
+                        </p>
+                        <p>
+                            <label for="userId">비밀번호</label>
+                            <input type="password" id="userPw" name="userPw" placeholder="4자이상 8자이하" required>
+                        </p>
+                        <p>
+                            <button type="submit">로그인</button>
+                        </p>
+                    </fieldset>
+                </form>
+                <div class="memberLink">
+                    <a href="#" class="join">회원가입</a>
+                    <a href="search_id.html" class="find">아이디/비밀번호 찾기</a>
+                </div>
+            </section>
+        </div>
+    </div>
+      <!--푸터 시작-->
+      <footer>
+        <ul class="bottomNav">
+          <li><a href="#">1:1온라인 상담</a></li>
+          <li><a href="#">24시간 응급실•펫택시</a></li>
+          <li><a href="#">예약하기</a></li>
+          <li><a href="#">내 주변 병원찾기</a></li>
+          <li><a href="#">로그인•회원가입</a></li>
+        </ul>
+        <div class="table">
+          <address>
+            <p>이름</p>
+            <p>서울특별시 종로구 중구 12길 33층 123호</p>
+            <p>공동대표. 김경민, 이초롱, 나은비, 황치연, 김소중</p>
+          </address>
+          <div class="custom">
+            <p>고객문의센터</p>
+            <a href="tel:010-111-2222"
+              >T. 1111-2222 (10:00 - 19:00 / 점심시간 12:30 - 13:30)</a
+            >
+            <a href="mailto:superman@test.com">E. everymal@gmail.com</a>
+          </div>
+          <div class="footBtn">
+            <a href="#">개인정보 처리방침</a>
+            <a href="#">이용약관</a>
+          </div>
+        </div>
+      </footer>
+
+      <!--푸터끝-->
+    </div>
+  </body>
+</html>
