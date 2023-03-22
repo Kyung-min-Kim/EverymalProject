@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서브페이지 틀</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/예약관리작성폼.css">
+  <script src="js/jquery-3.6.3.min.js"></script>
+ 
+</head>
+
+<body>
+  <div id="container_sub">
+    <header id="header">
+      <nav>
+        <ul class="topNav">
+          <li><a href="#">1:1온라인 상담</a></li>
+          <li><a href="#">24시간 응급실•펫택시</a></li>
+          <li><a href="#">예약하기</a></li>
+          <li><a href="#">내 주변 병원찾기</a></li>
+          <li><a href="#">로그인•회원가입</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2 class="pagetitlte">예약관리</h2>
+    <section id="sidebar_Area">
+      <div class="sidebars" id="sb_sidebar">
+        <p class="sidetitles">
+          서브페이지 이름
+        </p>
+      </div>
+    </section>
+
+    <section id="left_Area">
+      <div class="profileBox">
+        <div class="proimgBox">
+          <img class="proImg" src="img/cat4.png" alt="나의 프로필 이미지" />
+        </div>
+        <div class="speech_bubble">
+          <img class="bubbleImg" src="img/말풍선.svg" alt="말풍선 배경">
+          <p><span class="userID">user01</span>님 환영합니다!</p>
+        </div>
+      </div>
+      <div class="leftCategory">
+        <ul class="CatrgoryBox">
+          <li class="firstMenu">마이페이지
+            <ul>
+              <li class="secondMenu"><a href="">내 정보 관리</a></li>
+              <li class="secondMenu"><a href="">내 병원 관리</a></li>
+              <li class="secondMenu"><a href="">병원리뷰 관리</a></li>
+              <li class="secondMenu"><a href="">답변 관리</a></li>
+            </ul>
+          </li>
+          <li class="firstMenu">예약 관리
+            <ul>
+              <li class="secondMenu"><a href="">예약관리</a></li>
+            </ul>
+          </li>
+
+
+        </ul>
+      </div>
+
+
+    </section>
+    <div class="grey_line"></div>
+    <section id="tab_Area">
+      <div class="tabcontents">
+        <div id="tabBox01" class="tab-content ">
+          <div class="inputbox inputbox1"></div>
+          <div class="inputbox inputbox2"></div>
+            <p class="reservation_number">N0127149137</p>
+            <div class="inputbox"></div>
+            <form action="get" name="" id="my_info_form">
+              
+                <legend>정보관리폼</legend>
+                <fieldset id="up_fieldset">
+                  <div class="reserve_name formbox">
+                    <label for="reserve_name">예약자 성명</label>
+                    <input type="text" name="reserve_name" id="reserve_name"> 
+                  </div>
+    
+                  <div class="wish_date formbox">
+                    <label for="id">희망내원일</label>
+                     <input type="date" name="wish_date" id="wish_date">
+                  </div>
+    
+                  <div class="reserve_tel formbox">
+                  <label for="reserve_tel">예약자 연락처</label>
+                  <input type="text" name="reserve_tel" id="reserve_tel">
+                  </div>
+    
+                  <div class="subject formbox">
+                    <label for="subject">진료 과목</label>
+                    <input type="text" name="subject" id="subject">
+                  </div>
+                </fieldset>
+                
+  
+
+
+               <fieldset id="down_fieldset">
+                <div class="animal_info formbox">
+                  <label for="animal_infol">동물정보</label>
+                 <input type="text" name="animal_info" id="animal_info">
+                </div>
+  
+                <div class="species formbox">
+                  <label for="species">동물종</label>
+                 <input type="text" name="species" id="species">
+                </div>
+  
+  
+                <div class="agree formbox">
+                  <label >성별</label>
+                  <label for="male" id="male_label">♀</label>
+                  <input type="radio" name="gender" id="male">
+                  <label for="female" id="female_label">♂</label>
+                  <input type="radio" name="gender" id="female">
+                </div>
+                
+                <div class="animal_age formbox">
+                    <label for="animal_age">나이</label>
+                    <input type="number" name="animal_age" id="animal_age">
+                </div>
+
+                <div class="requirement formbox">
+                    <label for="requirement">요구사항</label>
+                    <input type="text" name="requirement" id="requirement">
+                </div>
+               </fieldset>
+                
+            </form>
+            <button type="submit" id="btn1" class="edit_btn">예약 거절</button>
+            <button type="submit" id="btn2" class="edit_btn">예약 확정</button>
+          </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- fooooooooooooooooooooooooooooooooooooooooooooooooooooooter -->
+    <footer>
+      <ul class="bottomNav">
+        <li><a href="#">1:1온라인 상담</a></li>
+        <li><a href="#">24시간 응급실•펫택시</a></li>
+        <li><a href="#">예약하기</a></li>
+        <li><a href="#">내 주변 병원찾기</a></li>
+        <li><a href="#">로그인•회원가입</a></li>
+      </ul>
+      <div class="table">
+        <address>
+          <p>이름</p>
+          <p>서울특별시 종로구 중구 12길 33층 123호</p>
+          <p>공동대표. 김경민, 이초롱, 나은비, 황치연, 김소중</p>
+        </address>
+        <div class="custom">
+          <p>고객문의센터</p>
+          <a href="tel:010-111-2222">T. 1111-2222 (10:00 - 19:00 / 점심시간 12:30 - 13:30)</a>
+          <a href="mailto:superman@test.com">E. everymal@gmail.com</a>
+        </div>
+        <div class="footBtn">
+          <a href="#">개인정보 처리방침</a>
+          <a href="#">이용약관</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script>
+    
+  </script>
+</body>
+
+</html>
