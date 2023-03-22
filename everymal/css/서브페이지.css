@@ -1,0 +1,190 @@
+@charset "utf-8";
+body {
+  width: 100%;
+  height: auto;
+  background-color: pink;
+}
+
+#container_sub {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: burlywood;
+}
+.pagetitlte {
+  position: absolute;
+  display: inline-block;
+  top: 100px;
+  margin-left: 55%;
+  border: 3px solid red;
+}
+#sidebar_Area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3%;
+  height: 100%;
+  z-index: 100;
+  box-sizing: border-box;
+  background-color: #056cf2;
+}
+
+/* left_Area================================================================= */
+
+#left_Area {
+  position: relative;
+  top: 200px;
+  width: 14%;
+  height: 700px;
+  margin: 0 8% 0 8%;
+  background-color: red;
+}
+
+.profileBox {
+  position: relative;
+  width: 100%;
+  height: 30%;
+  background-color: cadetblue;
+}
+
+.proimgBox {
+  position: relative;
+  width: 41%;
+  height: 50%;
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+.proImg {
+  width: 100%;
+  height: 100%;
+}
+
+.speech_bubble {
+  position: relative;
+  width: 95%;
+  height: 30%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.bubbleImg {
+  width: 100%;
+}
+
+.speech_bubble p {
+  position: absolute;
+  top: 40%;
+  margin-left: 20%;
+}
+
+.leftCategory {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  padding: 10%;
+}
+.firstMenu {
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.secondMenu {
+  position: relative;
+  margin-bottom: 2%;
+}
+
+.firstMenu > a {
+  color: green;
+  font-size: 18px;
+}
+
+/* <!-- ============================구분선  */
+
+#verticalLine {
+  position: absolute;
+  height: 700px;
+  top: 200px;
+  left: 24.5%;
+  width: 1px;
+  background-color: red;
+  z-index: 999;
+}
+/* tab_Area================================================================= */
+
+#tab_Area {
+  position: absolute;
+  top: 200px;
+  width: 60%;
+  margin-right: 13%;
+  height: 700px;
+  right: 0;
+  border: 2px solid blue;
+}
+
+.tab_nav {
+  position: absolute;
+  right: -5.3%;
+  width: 5%;
+  height: 100%;
+  /* 나중에 높이값 auto */
+  display: block;
+  border: 1px solid black;
+  background-color: palegreen;
+}
+
+.tab_Btns {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.tBtn1 {
+  width: 100%;
+  height: 15%;
+  background-color: pink;
+}
+
+.tBtn2 {
+  width: 100%;
+  height: 15%;
+  background-color: palevioletred;
+}
+
+.tBtn a {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 20% 0;
+}
+
+.tBtn span {
+  display: block;
+  width: 14px;
+  margin: 0 auto;
+}
+
+.pointT {
+  color: aliceblue;
+}
+.tabcontents {
+  position: relative;
+  background-color: yellow;
+  width: 100%;
+  height: 100%;
+}
+
+/* ===========================================footer */
+
+footer {
+  position: relative;
+  bottom: 0;
+  margin-top: 20%;
+  background-color: #4f94ee;
+}
