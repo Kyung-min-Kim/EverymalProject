@@ -1,0 +1,160 @@
+@charset "utf-8";
+body {
+  width: 100%;
+  height: auto;
+}
+
+#container_sub {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.pagetitlte {
+  position: absolute;
+  display: inline-block;
+  top: 100px;
+  margin-left: 47%;
+  font-size: 1.6vw;
+}
+#sidebar_Area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3%;
+  height: 100%;
+  z-index: 100;
+  box-sizing: border-box;
+  background-color: #64199f;
+}
+.content {
+  position: relative;
+  height: 170vh;
+  width: 80%;
+  margin: 0 auto;
+  margin-left: 12%;
+  margin-top: 13%;
+}
+.topButton {
+  position: relative;
+}
+.topButton a {
+  display: inline-block;
+  background-color: #64199f;
+  border-radius: 5px;
+  width: 8%;
+  height: 4vh;
+}
+.topButton a > span {
+  position: relative;
+  top: 0.7vh;
+  font-size: 0.8vw;
+  display: block;
+  color: #fff;
+  text-align: center;
+}
+.goToAnswer {
+  margin-left: 83.5%;
+}
+.questionContent {
+  position: relative;
+  margin-top: 2%;
+  border: 4px solid #64199f;
+}
+.questionForm,
+.answerForm {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+.title {
+  position: relative;
+}
+.title > label {
+  font-size: 1.2vw;
+}
+.title > input {
+  margin-left: 2%;
+  width: 35%;
+  background-color: #d9d9d9;
+  border: none;
+  height: 3vh;
+  border-radius: 5px;
+}
+.info {
+  position: absolute;
+  top: 70px;
+  margin-left: 67%;
+  width: 25%;
+}
+.info > span {
+  margin-left: 6%;
+}
+.line {
+  position: relative;
+  width: 100%;
+  height: 0.3vh;
+  background-color: #ebe8e8;
+  margin: 0 auto;
+  margin: 2% 0 1% 0;
+}
+.writer {
+  position: relative;
+  margin-left: 84%;
+}
+.check {
+  position: absolute;
+  margin-top: -4vh;
+  margin-left: 80%;
+  width: 20%;
+}
+.check > span {
+  font-size: 1.1vw;
+}
+.check > span.color {
+  color: #64199f;
+}
+.writerHospital {
+  margin-left: 83%;
+}
+.questionText {
+  position: relative;
+  resize: none;
+  width: 97%;
+  margin: 0 auto;
+  display: block;
+  height: 50vh;
+  margin-top: 3%;
+  border: none;
+  background-color: #ebe8e8;
+  border-radius: 5px;
+}
+.btn {
+  text-align: center;
+}
+.btnQuestion {
+  margin: 3% 0 7% 3%;
+  color: #fff;
+  border: none;
+  background-color: #64199f;
+  font-size: 0.9vw;
+  width: 10%;
+  height: 4vh;
+  border-radius: 5px;
+}
+.boldLine {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  height: 0.4vh;
+  background-color: #64199f;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  margin-top: 20%;
+  background-color: #9874b5;
+}

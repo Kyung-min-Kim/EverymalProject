@@ -1,0 +1,540 @@
+@charset "utf-8";
+
+body {
+  width: 100%;
+  height: auto;
+  
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #91D3F9;
+  height: 10%;
+}
+body::-webkit-scrollbar-track {
+  background-color: #d9d9d9;
+}
+#container_sub {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  
+}
+.pagetitlte {
+  font-size: 2vw;
+  position: absolute;
+  display: inline-block;
+  top: 100px;
+  margin-left: 50%;
+  border: 3px solid red;
+}
+#sidebar_Area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3%;
+  height: 100%;
+  z-index: 100;
+  box-sizing: border-box;
+  background-color: #91D3F9;
+}
+
+/* left_Area================================================================= */
+.grey_line{
+  position: absolute;
+  bottom: 34%;
+  left: 24%;
+  width: 1px;
+  height: 50%;
+  border-left: 1px solid #EBE8E8;
+}
+#left_Area {
+  position: relative;
+  top: 200px;
+  width: 14%;
+  height: 700px;
+  margin: 0 8% 0 8%;
+  /*background-color: red;*/
+}
+
+.profileBox {
+  position: relative;
+  width: 100%;
+  height: 30%;
+ /* background-color: cadetblue;*/
+}
+
+.proimgBox {
+  position: relative;
+  width: 41%;
+  height: 50%;
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 100%;
+}
+
+.proImg {
+  width: 100%;
+  height: 100%;
+}
+
+.speech_bubble {
+  position: relative;
+  width: 95%;
+  height: 30%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+.speech_bubble p{
+  position: relative;
+  bottom: 70%;
+  left: 20%;
+}
+.bubbleImg{
+  width: 100%;
+}
+.firstMenu{
+  color: #91D3F9;
+}
+.secondMenu{
+  position: relative;
+  left: 5%;
+}
+
+.userID{
+  color: #91D3F9;
+}
+/* tab_Area================================================================= */
+
+#tab_Area {
+  position: absolute;
+  top: 200px;
+  width: 60%;
+  margin-right: 13%;
+  height: 700px;
+  right: 0;
+  border: 5px solid #91D3F9;
+  border-radius: 10px 0 10px 10px;
+}
+
+.tab_nav {
+  position: absolute;
+  right: -5%;
+  width: 5%;
+  height: 100%;
+  /* 나중에 높이값 auto */
+  display: block;
+  top: -0.7%;
+  
+  /*background-color: palegreen;*/
+
+}
+
+.tab_Btns {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.tab_Btns li{
+  margin-bottom: 5.3%;
+  border: 5px solid #91D3F9;
+  cursor: pointer;
+  text-align: center;
+  /*border-left: none;*/ /*여기서 없애버려서 width 줄어듦*/
+}
+
+.tab_Btns li a{
+  position: absolute;
+  width: 100%;
+  height: 15%;
+  border: 1px solid red;
+  left: 5.7%;
+}
+.tBtn1 {
+  border: 5px solid #91D3F9;
+  width: 100%;
+  height: 15%;
+  background-color: #fff;
+  
+ 
+}
+
+.tBtn2 {
+  border: 5px solid #91D3F9;
+  width: 100%;
+  height: 15%;
+  background-color: #91D3F9;
+}
+.tBtn3 {
+  border: 5px solid #91D3F9;
+  width: 100%;
+  height: 15%;
+  background-color: #91D3F9;
+}
+
+.tBtn4 {
+  border: 5px solid #91D3F9;
+  width: 100%;
+  height: 15%;
+  background-color: #91D3F9;
+}
+
+
+.tabcontents {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/*=========================================tabBox01*/
+.inputbox{
+  position: absolute;
+  width: 75%;
+  height: 93%;
+  background-color: #EFEFEF;
+  left: 20%;
+  top: 4%;
+}
+#my_info_form{
+  position: relative;
+  /*border: 1px solid red;*/
+  top: 4vh;
+
+}
+.formbox{
+position: relative;
+box-sizing: border-box;
+height: 100%;
+width: 100%;
+/*border: 1px solid blue;*/
+padding: 2% 5%;
+}
+
+.formbox input{
+  position: absolute;
+  width: 18%;
+  left: 25%;
+  border-radius: 10px;
+  height: 30%;
+}
+#tabBox01 #tel_front{
+  position: absolute;
+  width: 7%;
+  left: 25%;
+}
+
+#tabBox01 #tel{
+  position: absolute;
+  width: 18%;
+  left: 35%;
+ 
+}
+#zip{
+  position: absolute;
+  top: 0;
+  right: 56%;
+  width: 12%;
+}
+#address{
+  position: absolute;
+  bottom: 0;
+}
+
+.edit_btn{
+  position: absolute;
+  right: 6%;
+  top: 90%;
+  width: 9%;
+  background-color:  #91D3F9;
+  text-align: center;
+  height: 5%;
+  border-radius: 5px;
+  /*border: none;*/
+  color: #fff;
+}
+/*.agree input{
+  position: relative;
+  width: 200%;
+  height: 200%;
+  
+}*/
+input[type=radio]{
+  width: 3%;
+}
+#agree{
+  position: absolute;
+  left: 24%;
+}
+.consent{
+  position: absolute;
+  left: 20%;
+  
+}
+
+#agree_label{
+  position: absolute;
+  left: 28%;
+}
+
+#disagree_label{
+  position: absolute;
+  left: 40%;
+}
+#disagree{
+  position: absolute;
+  left: 36%;
+}
+
+
+
+
+
+/*==============================================tabBox02*/
+.formbox2{
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid blue;
+  padding: 2% 5%;
+  
+}
+#myhospital_info_form{
+  position: relative;
+  /*border: 1px solid red;*/
+  top: 4vh;
+
+}
+
+/*.formbox2 input{
+  position: absolute;
+  width: 18%;
+  left: 25%;
+  border-radius: 10px;
+  height: 30%;
+}*/
+.subject{
+  position: absolute;
+  border: 1px solid orange;
+  height: 80%;
+}
+.subject fieldset{
+  position: relative;
+  width: 15%;
+  left: 22%;
+  bottom: 20%;
+  margin: 0 5% 0 0;
+  padding: 1% 2%;
+}
+
+
+
+.run_time {
+  position: absolute;
+  top: 180%;
+  left: 0;
+  width: 100%;
+  height: 70%;
+}
+.run_time fieldset{
+  position: relative;
+  width: 15%;
+  left: 22%;
+  top: -12%;
+  padding: 1% 2%;
+}
+.notfilter input{
+  position: absolute;
+  width: 18%;
+  left: 25%;
+  border-radius: 10px;
+  height: 30%;
+}
+#tab-2btn{
+  position: absolute;
+  left: 45%;
+ 
+}
+
+#tabBox02 #tel_front{
+  position: absolute;
+  left: 25%;
+
+}
+#tabBox02 #tel{
+  position: absolute;
+  left: 32%;
+}
+
+
+#tabBox02 #zip{
+  position: absolute;
+  top: 2%;
+}
+
+#tabBox02 #hospital_address{
+  position: absolute;
+  bottom: 0%;
+}
+
+
+/*======================tabBox03*/
+#tabBox03{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#tabBox03 .total_p{
+  display: inline-block;
+  font-size: 1vw;
+  position: absolute;
+  top: 2%;
+  
+}
+.total_score{
+  position: absolute;
+  left: 55%;
+  
+}
+
+.total_review{
+  position: absolute;
+  left: 75%;
+}
+#tabBox03 table{
+  position: relative;
+  margin: 0 auto;
+  top: 10%;
+  width: 95%;
+  height: 75%;
+  
+}
+td,th{
+  text-align: center;
+  
+}
+td{
+  line-height: 400%;
+}
+thead th{
+ padding: 1% 0;
+}
+tbody{
+  border-top: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
+  
+  
+}
+tbody tr{
+
+}
+
+#tabBox03 span{
+  color: #91D3F9;
+}
+
+/*========================tab-4*/
+#tabBox04{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#tabBox04 table{
+  position: relative;
+  margin: 0 auto;
+  top: 10%;
+  width: 95%;
+  height: 75%;
+  
+}
+
+.review_content{
+  text-overflow: ellipsis;
+}
+#tabBox04 .total_answer{
+  display: inline-block;
+  font-size: 1vw;
+  position: absolute;
+  top: 2%;
+  left: 3%;
+  
+}
+
+.answer_number{
+  position: absolute;
+  right: -20%;
+}
+
+#divPaging {
+position: absolute;
+bottom: 5%;
+clear:both; 
+margin:0 auto; 
+width:16%; 
+left: 50%;
+transform: translate(-50%, -50%);
+
+}
+
+#divPaging > div {
+float:left;
+width: 10%;
+padding: 0 4.3%;
+margin:0 auto;
+text-align:center;
+}
+#divPaging > div:active{
+  background-color: #D9D9D9;
+}
+/* ===========================================footer */
+
+footer {
+  position: relative;
+  bottom: 0;
+  margin-top: 20%;
+  background-color: #C5E8FD;
+}
+
+fieldset{
+  width: 25%;
+  border: 1px solid red;
+  float: left;
+}
+
+
+form::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.tab-content.current{
+  display: inherit;
+}
+
+.tab-content{
+  /*display: none;*/
+
+}
+
+#tabBox01{
+  display: none;
+}
+
+#tabBox02{
+  /*display: none;*/
+}
+#tabBox03{
+  display: none;
+}
+
+#tabBox04{
+  display: none;
+}
+

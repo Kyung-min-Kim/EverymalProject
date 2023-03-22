@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서브페이지 틀</title>
+  <script src="js/테스트.js"> </script>
+  <script src="js/jquery-3.6.3.min.js"> </script>
+
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/서브페이지.css" />
+
+</head>
+
+<body>
+  <div id="container_sub">
+    <header id="header">
+      <nav>
+        <ul class="topNav">
+          <li><a href="#">1:1온라인 상담</a></li>
+          <li><a href="#">24시간 응급실•펫택시</a></li>
+          <li><a href="#">예약하기</a></li>
+          <li><a href="#">내 주변 병원찾기</a></li>
+          <li><a href="#">로그인•회원가입</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2 class="pagetitlte">페이지 제목</h2>
+    <section id="sidebar_Area">
+      <div class="sidebars" id="sb_sidebar">
+        <p class="sidetitles">
+          서브페이지 이름
+        </p>
+      </div>
+    </section>
+
+    <section id="left_Area">
+      <div class="profileBox">
+        <div class="proimgBox">
+          <img class="proImg" src="#" alt="나의 프로필 이미지" />
+        </div>
+        <div class="speech_bubble">
+          <img class="bubbleImg" src="images/말풍선.png" alt="말풍선 배경">
+          <p><span class="userID">user01</span>님 환영합니다!</p>
+        </div>
+      </div>
+      <div class="leftCategory">
+        <ul class="catrgoryBox">
+          <li class="firstMenu">
+            <a class="menus" href="#tab1">첫번째 메뉴로 향하는 곳</a>
+            <ul>
+              <li class="sMenu"><a href="#tabBox01">1-1</a></li>
+              <li class="sMenu"><a href="#tabBox02">1-2</a></li>
+            </ul>
+          </li>
+          <li class="secondMenu">
+            <a class="menus" href="#tab2">두번째 메뉴로 향하는 곳</a>
+            <ul>
+              <li class="sMenu"><a href="#tab2 #tabBox03">2-1</a></li>
+              <li class="sMenu"><a href="#tab2 #tabBox04">2-2</a></li>
+            </ul>
+          </li>
+
+
+        </ul>
+      </div>
+
+
+    </section>
+    <section id="tab_Area">
+      <div class="tabs active" id="tab1">
+        <div class="tab_nav">
+          <ul class="tab_Btns">
+            <li class="tBtn tBtn1 "><a href="#tabBox01" class="choice">01</a></li>
+            <li class="tBtn tBtn2"><a href="#tabBox02">02</a></li>
+
+
+          </ul>
+        </div>
+        <div class="tabcontents">
+          <div id="tabBox01" class="tabcons">tab1 content
+            블라블ㄹ라블ㄹ발블발발바랍랍라
+          </div>
+          <div id="tabBox02" class="tabcons">tab2 content
+            붋ㄼ랍랍랍라발발발발바랍랍랍랍
+          </div>
+
+        </div>
+      </div>
+
+      <div class="tabs" id="tab2">
+        <div class="tab_nav">
+          <ul class="tab_Btns">
+            <li class="tBtn tBtn1 "><a href="#tabBox03" class="choice">03</a></li>
+            <li class="tBtn tBtn2"><a href="#tabBox04">04</a></li>
+          </ul>
+        </div>
+        <div class="tabcontents">
+          <div id="tabBox03" class="tabcons">2번째 메뉴의 tab1 content
+
+          </div>
+          <div id="tabBox04" class="tabcons">2번째 메뉴의 tab2 content
+            붋ㄼ랍랍랍라발발발발바랍랍랍랍
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!-- fooooooooooooooooooooooooooooooooooooooooooooooooooooooter -->
+    <footer>
+      <ul class="bottomNav">
+        <li><a href="#">1:1온라인 상담</a></li>
+        <li><a href="#">24시간 응급실•펫택시</a></li>
+        <li><a href="#">예약하기</a></li>
+        <li><a href="#">내 주변 병원찾기</a></li>
+        <li><a href="#">로그인•회원가입</a></li>
+      </ul>
+      <div class="table">
+        <address>
+          <p>이름</p>
+          <p>서울특별시 종로구 중구 12길 33층 123호</p>
+          <p>공동대표. 김경민, 이초롱, 나은비, 황치연, 김소중</p>
+        </address>
+        <div class="custom">
+          <p>고객문의센터</p>
+          <a href="tel:010-111-2222">T. 1111-2222 (10:00 - 19:00 / 점심시간 12:30 - 13:30)</a>
+          <a href="mailto:superman@test.com">E. everymal@gmail.com</a>
+        </div>
+        <div class="footBtn">
+          <a href="#">개인정보 처리방침</a>
+          <a href="#">이용약관</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
