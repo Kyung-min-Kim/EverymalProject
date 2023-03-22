@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>동물병원 상세정보 페이지</title>
+    <link rel="stylesheet" href="css/hospital_detail.page2.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/join.css">
+  </head>
+  <body>
+    <div class="container">
+      <!--header시작-->
+      <header>
+        <nav>
+          <ul class="topNav">
+            <li><a href="#">1:1온라인 상담</a></li>
+            <li><a href="#">24시간 응급실•펫택시</a></li>
+            <li><a href="#">예약하기</a></li>
+            <li><a href="#">내 주변 병원찾기</a></li>
+            <li><a href="#">로그인•회원가입</a></li>
+          </ul>
+        </nav>
+      </header>
+      <h2 class="pagetitlte">회원가입</h2>
+      <section id="sidebar_Area">
+      </section>
+      <!--header영역 끝-->
+      <!-- 개인 회원가입 시작 -->
+      <section id="memberArea" class="memberJoin">
+        <form action="#" method="post" id="joinForm" name="joinForm">
+            <fieldset>
+                <legend>회원가입 정보 입력 폼</legend>
+                <div id="user_form">
+                  <div class="formSign"><strong class="require">필수</strong>는 반드시 입력하여야 하는 항목입니다.</div>
+                  <h2>회원정보</h2>
+                  <p>
+                    <label for="name">성명<strong class="require">필수</strong></label>
+                    <input type="text" id="name" name="name" required placeholder="차은우">
+                  </p>
+                  <p>
+                    <label for="id">아이디<strong class="require">필수</strong></label>
+                    <input type="text" id="id" name="id" required placeholder="everymal">
+                    <a href="#" class="idCheck greenbox">ID중복확인</a>
+                  </p>
+                  <p>
+                    <label for="password">비밀번호<strong class="require">필수</strong></label>
+                    <input type="password" id="password" name="password" required placeholder="영문/숫자 4~8자 이내">
+                  </p>
+                  <p>
+                    <label for="confirmPassword">비밀번호 확인<strong class="require">필수</strong></label>
+                    <input type="password" id="confirmPassword=" name="confirmPassword" required>
+                  </p>
+                  <p>
+                    <label for="tel">연락처</label>
+                    <input type="tel" id="tel" name="tel" maxlength="11" size="20" title="하이픈(-)은 입력할 수 없습니다." placeholder="입력 예) 01011112222">
+                  </p>
+                  <p>
+                    <label for="address" class="labelAddress">주소</label>
+                    <a href="#" class="findZipcode greenbox">우편번호 찾기</a>
+                    <input type="tel" id="zipcode" name="zipcode" maxlength="5" size="6" title="우편번호">
+                    <input type="text" id="address" name="address" maxlength="100" size="60" placeholder="입력 예) 서울특별시 종로구 중구 12길 33층 123호">
+                  </p>
+                  <p>
+                    <label for="email">이메일<strong class="require">필수</strong></label>
+                    <input type="email" id="email=" name="email" size="30" required placeholder="입력 예) everymal@gmail.com">
+                  </p>
+                  <p class="mailing">
+                    <em>메일링 리스트 가입</em>
+                    <span>메일링리스트에 가입하시면 everymal의 뉴스레더를 받아보실 수 있습니다.</span>
+                    <label for="mailingOk">예</label>
+                    <input type="radio" id="mailingOk" name="mailing" value="Yes" checked>
+                    <label for="mailingNo">아니오</label>
+                    <input type="radio" id="mailingNo" name="mailing" value="No">
+                  </p>
+                </div>
+                <div id="pet_form">
+                  <div class="formSign"><strong class="require">필수</strong>는 반드시 입력하여야 하는 항목입니다.</div>
+                  <h2>반려동물 정보</h2>
+                  <p class="pet_name">
+                    <label for="pet_name">반려동물 이름<strong class="require">필수</strong></label>
+                    <input type="text" id="pet_name" name="pet_name" required placeholder="토리">
+                  </p>
+                  <p class="pet_birth">
+                    <label for="pet_birth">반려동물 생년월일</label>
+                    <input type="date" id="pet_birth" name="pet_birth">
+                  </p>
+                  <p class="pet_gender">
+                    <label for="pet_gender">반려동물 성별<strong class="require">필수</strong></label>
+                    ♀<input type="radio" id="pet_gender" name="pet_gender" required>
+                    ♂<input type="radio" id="pet_gender" name="pet_gender">
+                  </p>
+                  <p class="zip">
+                    <label for="pet_type">반려동물 종류</label>
+                    <select name="pet_type" id="pet_type">
+                      <option value="dog">개</option>
+                      <option value="cat">고양이</option>
+                      <option value="rabbit">토끼</option>
+                      <option value="fish">어류</option>
+                      <option value="bird">조류</option>
+                      <option value="hamster">햄스터 등 소동물</option>
+                      <option value="direct">직접입력</option>
+                    </select>
+                    <input type="text" name="direct" id="pet_type" placeholder="목록에 없는 경우 직접 입력해주세요." size="30">
+                  </p>
+                  <p class="pet_code">
+                    <label for="pet_code">반려동물 등록번호</label>
+                    <input type="text" id="pet_code" name="pet_code">
+                  </p>
+                  <p class="pet_blood">
+                    <label for="pet_blood">반려동물 혈액형</label>
+                    <select name="pet_blood" id="pet_blood">
+                      <optgroup label="개">
+                        <option value="p_bloodtype_dea1.1">DEA1.1</option>
+                        <option value="p_bloodtype_dea1.2">DEA1.2</option>
+                        <option value="p_bloodtype_dea1.3">DEA1.3</option>
+                        <option value="p_bloodtype_dea3">DEA3</option>
+                        <option value="p_bloodtype_dea4">DEA4</option>
+                        <option value="p_bloodtype_dea5">DEA5</option>
+                        <option value="p_bloodtype_dea7">DEA7</option>
+                      </optgroup>
+                      <optgroup label="고양이">
+                        <option value="p_bloodtype_a">A</option>
+                        <option value="p_bloodtype_b">B</option>
+                        <option value="p_bloodtype_ab">AB</option>
+                      </optgroup>
+                    </select>
+                  </p>
+                  <p class="pet_weight">
+                    <label for="pet_weight">반려동물 몸무게</label>
+                    <input type="text" id="pet_weight" name="pet_weight">
+                  </p>
+                  <p class="pet_warning">
+                    <label for="pet_warning">반려동물 특이사항</label>
+                    <textarea name="pet_warning" id="pet_warning" cols="50" rows="5"></textarea>
+                  </class>
+                </div>
+                <div class="btnJoinArea">
+                    <button type="submit" class="btnOk">회원가입</button>
+                    <button type="reset" class="btnCancle">초기화</button>
+                </div>
+            </fieldset>
+        </form>
+     </section>
+      <!-- 개인 회원가입 끝 -->
+      <!--푸터 시작-->
+      <footer>
+        <ul class="bottomNav">
+          <li><a href="#">1:1온라인 상담</a></li>
+          <li><a href="#">24시간 응급실•펫택시</a></li>
+          <li><a href="#">예약하기</a></li>
+          <li><a href="#">내 주변 병원찾기</a></li>
+          <li><a href="#">로그인•회원가입</a></li>
+        </ul>
+        <div class="table">
+          <address>
+            <p>이름</p>
+            <p>서울특별시 종로구 중구 12길 33층 123호</p>
+            <p>공동대표. 김경민, 이초롱, 나은비, 황치연, 김소중</p>
+          </address>
+          <div class="custom">
+            <p>고객문의센터</p>
+            <a href="tel:010-111-2222"
+              >T. 1111-2222 (10:00 - 19:00 / 점심시간 12:30 - 13:30)</a
+            >
+            <a href="mailto:superman@test.com">E. everymal@gmail.com</a>
+          </div>
+          <div class="footBtn">
+            <a href="#">개인정보 처리방침</a>
+            <a href="#">이용약관</a>
+          </div>
+        </div>
+      </footer>
+
+      <!--푸터끝-->
+    </div>
+  </body>
+</html>

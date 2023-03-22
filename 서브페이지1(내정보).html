@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>서브페이지 틀</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/서브페이지.css" />
+  <script src="js/jquery-3.6.3.min.js"></script>
+ 
+</head>
+
+<body>
+  <div id="container_sub">
+    <header id="header">
+      <nav>
+        <ul class="topNav">
+          <li><a href="#">1:1온라인 상담</a></li>
+          <li><a href="#">24시간 응급실•펫택시</a></li>
+          <li><a href="#">예약하기</a></li>
+          <li><a href="#">내 주변 병원찾기</a></li>
+          <li><a href="#">로그인•회원가입</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2 class="pagetitlte">페이지 제목</h2>
+    <section id="sidebar_Area">
+      <div class="sidebars" id="sb_sidebar">
+        <p class="sidetitles">
+          서브페이지 이름
+        </p>
+      </div>
+    </section>
+
+    <section id="left_Area">
+      <div class="profileBox">
+        <div class="proimgBox">
+          <img class="proImg" src="img/cat2.png" alt="나의 프로필 이미지" />
+        </div>
+        <div class="speech_bubble">
+          <img class="bubbleImg" src="img/말풍선.svg" alt="말풍선 배경">
+          <p><span class="userID">user01</span>님 환영합니다!</p>
+        </div>
+      </div>
+      <div class="leftCategory">
+        <ul class="CatrgoryBox">
+          <li class="firstMenu">마이페이지
+            <ul>
+              <li class="secondMenu"><a href="">내 정보 관리</a></li>
+              <li class="secondMenu"><a href="">내 병원 관리</a></li>
+              <li class="secondMenu"><a href="">병원리뷰 관리</a></li>
+              <li class="secondMenu"><a href="">답변 관리</a></li>
+            </ul>
+          </li>
+          <li class="firstMenu">예약 관리
+            <ul>
+              <li class="secondMenu"><a href="">예약관리</a></li>
+            </ul>
+          </li>
+
+
+        </ul>
+      </div>
+
+
+    </section>
+    <div class="grey_line"></div>
+    <section id="tab_Area">
+      <div class="tab_nav">
+        <ul class="tab_Btns">
+          <li class="tBtn1 current">내<br>정 보</li>
+          <li class="tBtn2">내<br>병 원</li>
+          <li class="tBtn3" >병 원<br>리 뷰</li>
+          <li class="tBtn4" >답 변</li>
+
+
+        </ul>
+      </div>
+      <div class="tabcontents">
+        <div id="tab-1" class="tab-content current">
+          <div class="inputbox"></div>
+          <form action="get" name="" id="my_info_form">
+            
+              <legend>정보관리폼</legend>
+              <div class="name formbox">
+                <label for="name">이름</label>
+                <input type="text" name="name" id="name"> 
+              </div>
+
+              <div class="id formbox">
+                <label for="id">아이디</label>
+              <input type="text" name="id" id="id">
+              </div>
+
+              <div class="pwd formbox">
+              <label for="pwd">비밀번호</label>
+               <input type="password" name="pwd" id="pwd">
+              </div>
+
+              <div class="pwd_confirm formbox">
+                <label for="pwd_confirm">비밀번호 확인</label>
+                <input type="password" name="pwd_confirm" id="pwd_confirm">
+              </div>
+
+              <div class="tel formbox">
+                <label for="tel">연락처</label>
+                <input type="tel" name="tel_front" id="tel_front">
+               <input type="tel" name="tel" id="tel">
+              </div>
+
+              <div class="address formbox">
+                <label for="address">주소</label>
+               <input type="number" name="zip" id="zip">
+               <input type="text" name="address" id="address">
+              </div>
+
+              <div class="email formbox">
+                <label for="email">이메일</label>
+                <input type="email" name="email" id="email">
+              </div>
+
+              <div class="agree formbox">
+                <label >수신동의</label>
+                <label for="agree" id="agree_label">동의</label>
+                <input type="radio" name="consent" id="agree">
+                <label for="disagree" id="disagree_label">비동의</label>
+                <input type="radio" name="consent" id="disagree">
+              </div>
+          </form>
+          <button type="submit" class="edit_btn">수정하기</button>
+        </div>
+
+
+        <div id="tab-2" class="tab-content">
+          <div class="inputbox"></div>
+          <form action="get" id="myhospital_info_form">
+            <legend>내병원관리폼</legend>
+            <div class="name formbox2 notfilter">
+              <label for="name">병원이름</label>
+              <input type="text" name="name" id="name">
+              <button type="submit" id="tab-2btn">수정</button>
+            </div>
+            
+            <div class="hospital_tel formbox2 notfilter">
+              <label for="tel">병원 연락처</label>
+              <select name="tel_front" id="tel_front">
+                <option value="02">02</option>
+                <option value="031">031</option>
+                <option value="032">032</option>
+              </select>
+              <input type="tel" name="tel" id="tel">
+            </div>
+            <div class="hospital_address formbox2 notfilter">
+               <label for="hospital_address">병원 주소</label>
+               <input type="number" name="zip" id="zip">
+               <input type="text" name="hospital_address" id="hospital_address">
+            </div>
+            <div class="subject formbox2">
+              <label for="subject">진료과목</label>
+              <br>
+              <fieldset id="fieldset_1">
+                <input type="checkbox" name="" id="">
+                <label for="sergeon">내과</label>
+                <br>
+                <input type="checkbox" name="" id="">
+                <label for="">외과</label>
+                <br>
+                <input type="checkbox" name="" id="">
+                <label for="">안과</label>
+                <br>
+                <input type="checkbox" name="" id="">
+                <label for="">치과</label>
+              </fieldset>
+              <fieldset id="fieldset_2">
+                <input type="checkbox" name="" id="">
+                <label for="sergeon">내과</label>
+                <br>
+                <input type="checkbox" name="" id="">
+                <label for="">외과</label>
+                <br>
+                <input type="checkbox" name="" id="">
+                <label for="">안과</label>
+                <br>
+                <input type="checkbox" name="" id="">
+                <label for="">치과</label>
+              </fieldset>
+              <fieldset id="fieldset_3">
+                <label for="sergeon">내과</label>
+                <input type="checkbox" name="" id="">
+                <br>
+                <label for="">외과</label>
+                <input type="checkbox" name="" id="">
+                <br>
+                <label for="">안과</label>
+                <input type="checkbox" name="" id="">
+                <br>
+                <label for="">치과</label>
+                <input type="checkbox" name="" id="">
+              </fieldset>
+            </div>
+            <div class="run_time formbox2">
+              <label for="run_time">영업시간</label>
+              <br>
+              <fieldset id="run_time_fieldset">
+                <input type="checkbox" name="" id="">
+                <label for="">오전</label>
+                <br>
+                <input type="checkbox" name="" id="">
+                <label for="">오후</label>
+                <br>
+                <input type="checkbox" name="" id="">
+                <label for="">24시간</label>
+                <br>
+              </fieldset>
+            </div>
+          </form>
+          <button type="submit" id="edit_btn2" class="edit_btn" value="">수정하기</button>
+        </div>
+
+        <div id="tab-3" class="tab-content">
+          <p class="total_score total_p">병원 총점 <span class="jumsu">4.9</span><span class="ojum">/5</span></p>
+          <p class="total_review total_p">등록된 리뷰 수 <span class="gatsoo">728</span class="ga">개</p>
+
+          <table>
+              <thead>
+                <tr>
+                  <th>선택</th>
+                  <th>리뷰등록번호</th>
+                  <th>별점</th>
+                  <th>리뷰제목</th>
+                  <th>등록일</th>
+                  <th>인증된 사용자 여부</th>
+                </tr>
+              </thead>    
+              <tbody>
+                <tr>
+                  <td><input type="checkbox" name="" id=""></td>
+                  <td>0314</td>
+                  <td>4</td>
+                  <td><a href="#">의사가 돌팔이에요</a></td>
+                  <td>23/04/14</td>
+                  <td>N</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="" id=""></td>
+                  <td>0314</td>
+                  <td>4</td>
+                  <td><a href="#">의사가 돌팔이에요</a></td>
+                  <td>23/04/14</td>
+                  <td>N</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="" id=""></td>
+                  <td>0314</td>
+                  <td>4</td>
+                  <td><a href="#">의사가 돌팔이에요</a></td>
+                  <td>23/04/14</td>
+                  <td>N</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="" id=""></td>
+                  <td>0314</td>
+                  <td>4</td>
+                  <td><a href="#">의사가 돌팔이에요</a></td>
+                  <td>23/04/14</td>
+                  <td>N</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="" id=""></td>
+                  <td>0314</td>
+                  <td>4</td>
+                  <td><a href="#">의사가 돌팔이에요</a></td>
+                  <td>23/04/14</td>
+                  <td>N</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="" id=""></td>
+                  <td>0314</td>
+                  <td>4</td>
+                  <td><a href="#">의사가 돌팔이에요</a></td>
+                  <td>23/04/14</td>
+                  <td>N</td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="" id=""></td>
+                  <td>0314</td>
+                  <td>4</td>
+                  <td><a href="#">의사가 돌팔이에요</a></td>
+                  <td>23/04/14</td>
+                  <td>N</td>
+                </tr>
+                
+              </tbody>   
+              
+          </table>
+          <button type="submit" id="edit_btn3" class="edit_btn" value="">삭제요청</button>
+          <div id="divPaging">
+            
+            <div><a href="">1</a></div>
+            <div><a href="">2</a></div>
+            <div><a href="">3</a></div>
+            <div><a href="">4</a></div>
+            <div><a href="">5</a></div>
+            
+        </div>
+        </div>
+        <div id="tab-4" class="tab-content">
+          <p class="total_answer">총 답변 갯수<span class="answer_number">4</span></p>
+          <table>
+            <thead>
+                <th>선택</th>
+                <th>답변 등록 번호</th>
+                <th>답변 내용</th>
+                <th>답변등록일</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>0302</td>
+                <td class="review_content"><a href="#">내원하시어 정확한 진단을 받는 것을..</a></td>
+                <td>23/03/10</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>0302</td>
+                <td class="review_content"><a href="#">내원하시어 정확한 진단을 받는 것을..</a></td>
+                <td>23/03/10</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>0302</td>
+                <td class="review_content"><a href="#">내원하시어 정확한 진단을 받는 것을..</a></td>
+                <td>23/03/10</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>0302</td>
+                <td class="review_content"><a href="#">내원하시어 정확한 진단을 받는 것을..</a></td>
+                <td>23/03/10</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>0302</td>
+                <td class="review_content"><a href="#">내원하시어 정확한 진단을 받는 것을..</a></td>
+                <td>23/03/10</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>0302</td>
+                <td class="review_content"><a href="#">내원하시어 정확한 진단을 받는 것을..</a></td>
+                <td>23/03/10</td>
+              </tr>
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>0302</td>
+                <td class="review_content"><a href="#">내원하시어 정확한 진단을 받는 것을..</a></td>
+                <td>23/03/10</td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="submit" id="edit_btn4" class="edit_btn" value="">삭제하기</button>
+          <div id="divPaging">
+            
+            <div><a href="">1</a></div>
+            <div><a href="">2</a></div>
+            <div><a href="">3</a></div>
+            <div><a href="">4</a></div>
+            <div><a href="">5</a></div>
+            
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!-- fooooooooooooooooooooooooooooooooooooooooooooooooooooooter -->
+    <footer>
+      <ul class="bottomNav">
+        <li><a href="#">1:1온라인 상담</a></li>
+        <li><a href="#">24시간 응급실•펫택시</a></li>
+        <li><a href="#">예약하기</a></li>
+        <li><a href="#">내 주변 병원찾기</a></li>
+        <li><a href="#">로그인•회원가입</a></li>
+      </ul>
+      <div class="table">
+        <address>
+          <p>이름</p>
+          <p>서울특별시 종로구 중구 12길 33층 123호</p>
+          <p>공동대표. 김경민, 이초롱, 나은비, 황치연, 김소중</p>
+        </address>
+        <div class="custom">
+          <p>고객문의센터</p>
+          <a href="tel:010-111-2222">T. 1111-2222 (10:00 - 19:00 / 점심시간 12:30 - 13:30)</a>
+          <a href="mailto:superman@test.com">E. everymal@gmail.com</a>
+        </div>
+        <div class="footBtn">
+          <a href="#">개인정보 처리방침</a>
+          <a href="#">이용약관</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

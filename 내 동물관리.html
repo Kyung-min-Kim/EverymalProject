@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>마이페이지 > 내 동물관리</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/내 동물관리.css" />
+</head>
+
+<body>
+  <div id="container_sub">
+    <header id="header">
+      <nav>
+        <ul class="topNav">
+          <li><a href="#">1:1온라인 상담</a></li>
+          <li><a href="#">24시간 응급실•펫택시</a></li>
+          <li><a href="#">예약하기</a></li>
+          <li><a href="#">내 주변 병원찾기</a></li>
+          <li><a href="#">로그인•회원가입</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h2 class="pagetitlte">마이 페이지</h2>
+    <section id="sidebar_Area">
+      <div class="sidebars" id="sb_sidebar">
+        <p class="sidetitles">
+          서브페이지 이름
+        </p>
+      </div>
+    </section>
+
+    <section id="left_Area">
+      <div class="profileBox">
+        <div class="proimgBox">
+          <img class="proImg" src="#" alt="나의 프로필 이미지" />
+        </div>
+        <div class="speech_bubble">
+          <img class="bubbleImg" src="images/말풍선.png" alt="말풍선 배경">
+          <p><span class="userID">user01</span>님 환영합니다!</p>
+        </div>
+      </div>
+      <div class="leftCategory">
+        <ul class="CatrgoryBox">
+          <li class="firstMenu">
+            <a href="">마이페이지</a>
+
+            <ul>
+              <li class="secondMenu"><a href="">내 정보 관리</a></li>
+              <li class="secondMenu"><a href="">내 동물 관리</a></li>
+            </ul>
+          </li>
+          <li class="firstMenu">
+            <a href="">
+              예약관리•이용내역
+
+            </a>
+            <ul>
+              <li class="secondMenu"><a href="">동물병원</a></li>
+              <li class="secondMenu"><a href="">펫 택시</a></li>
+            </ul>
+          </li>
+          <li class="firstMenu noSubMenu"><a href="#">즐겨찾기한 병원</a></li>
+        </ul>
+      </div>
+
+
+    </section>
+    <div id="verticalLine"></div>
+    <section id="tab_Area">
+
+
+
+      <div class="tab_nav">
+        <ul class="tab_Btns">
+          <li class="tBtn tBtn1">
+            <a href="tabBox01"><span class="pointT">내</span><span>정보</span></a>
+          </li>
+          <li class="tBtn tBtn2">
+            <a href="#"><span class="pointT">펫</span><span>정보</span></a>
+          </li>
+        </ul>
+      </div>
+      <div class="tabcontents">
+        <div id="tabBox">
+          <div class="inputBck"></div>
+          <div class="myPetInfoTitle">
+            <form action="#" name="myPetInfoForm" method="post">
+              <fieldset>
+                <legend>내 반려동물 정보 수정 폼</legend>
+                <p>
+                  <label class="infoTitle" for="name">반려동물 이름</label>
+                  <input class="answer" type="text" id="name" name="name" />
+                </p>
+                <p>
+                  <label class="infoTitle" for="age">나이</label>
+                  <input class="answer" type="number" id="age" name="age" />
+                </p>
+                <p>
+                  <label class="infoTitle" for="genderChoice">성별</label>
+                  <label class="genderTitle gt1" for="genderChoice">♀</label>
+                  <input class="answer g_C1" type="radio" id="genderChoice" name="gender" value="male" />
+                  <label class="genderTitle gt2" for="genderChoice">♂︎</label>
+                  <input class="answer g_C2" type="radio" id="genderChoice" name="gender" value="female" />
+                </p>
+                <p>
+                  <label class="infoTitle" for="race">동물 종</label>
+                  <select name="petRace" id="petRace" class="answer selectPet">
+                    <option value="dog">개</option>
+                    <option value="cat">고양이</option>
+                    <option value="smallAnimal">소동물</option>
+                    <option value="reptile">파충류</option>
+                    <option value="fish">어류</option>
+                    <option value="etc">조류</option>
+                  </select>
+                  <input class="answer petRaceAn" type="text" id="petRace" name="petRace" />
+                  <span class="noticeText">※ 선택창에 없는 경우 입력해주세요.</span>
+                </p>
+                <p>
+                  <label class="infoTitle" for="perNumber">동물등록번호</label>
+                  <input class="answer" type="number" id="petNumber" name="perNumber" />
+                </p>
+                <p>
+                  <label class="infoTitle" for="bloodType">혈액형</label>
+                  <select name="bloodType" id="bloodType" class="answer selectBT">
+                    <option value="dea1">DEA1</option>
+                    <option value="dea1.1">DEA1.1</option>
+                    <option value="dea1.2">DEA1.2</option>
+                    <option value="dea3">DEA3</option>
+                    <option value="dea4">DEA4</option>
+                    <option value="dea5">DEA5</option>
+                    <option value="dea7">DEA7</option>
+                    <option value="dea8">DEA8</option>
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="ab">AB</option>
+                    <option value="o">O</option>
+                  </select>
+                </p>
+                <p>
+                  <label class="infoTitle" for="weight">몸무게</label>
+                  <input class="answer" type="number" id="weight" name="weight" />
+                </p>
+                <p>
+                  <label for="infoTitle" for="notice">유의사항</label>
+                  <input class="answer writeNote" type="text" id="notice" name="notice" />
+                </p>
+                <button class="btnOk" type="submit">수정하기</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+    </section>
+
+
+
+
+    <!-- fooooooooooooooooooooooooooooooooooooooooooooooooooooooter -->
+    <footer>
+      <ul class="bottomNav">
+        <li><a href="#">1:1온라인 상담</a></li>
+        <li><a href="#">24시간 응급실•펫택시</a></li>
+        <li><a href="#">예약하기</a></li>
+        <li><a href="#">내 주변 병원찾기</a></li>
+        <li><a href="#">로그인•회원가입</a></li>
+      </ul>
+      <div class="table">
+        <address>
+          <p>이름</p>
+          <p>서울특별시 종로구 중구 12길 33층 123호</p>
+          <p>공동대표. 김경민, 이초롱, 나은비, 황치연, 김소중</p>
+        </address>
+        <div class="custom">
+          <p>고객문의센터</p>
+          <a href="tel:010-111-2222">T. 1111-2222 (10:00 - 19:00 / 점심시간 12:30 - 13:30)</a>
+          <a href="mailto:superman@test.com">E. everymal@gmail.com</a>
+        </div>
+        <div class="footBtn">
+          <a href="#">개인정보 처리방침</a>
+          <a href="#">이용약관</a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동물병원 상세정보 페이지</title>
+    <link rel="stylesheet" href="css/hospital_detail.page2.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/jquery-3.6.3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!--header시작-->
+        <header>
+            <nav>
+              <ul class="topNav">
+                <li><a href="#">1:1온라인 상담</a></li>
+                <li><a href="#">24시간 응급실•펫택시</a></li>
+                <li><a href="#">예약하기</a></li>
+                <li><a href="#">내 주변 병원찾기</a></li>
+                <li><a href="#">로그인•회원가입</a></li>
+              </ul>
+            </nav>
+        </header>
+        <section id="sidebar_Area">
+           <div class="cidebars" id="hp_sidebar"> </div>
+        </section>
+        <div class="mypet_info">
+          <a href="#"><img src="img/infoimg.png" alt="반려동물정보버튼"><br>
+            반려동물 <br>
+            정보보기</a>
+        </div>
+        <!--header영역 끝-->
+        <!--컨텐츠영역 시작-->
+        <div class="contentArea">
+         
+          <h2>N동물의료센터</h2>
+          <div id="line"></div>
+          <!--동물병원정보 섹션 시작-->
+          <section id="hospitalInfo">
+             <div class="hospitalPic">
+                <img src="img/n_hospital.jpeg" class="bigPic" alt="내부사진1">
+                 <ul>
+                    <li><a href="#"><img src="img/n_hospital2.jpeg" class="smallPic" alt="내부사진2"></a></li>
+                    <li><a href="#"><img src="img/n_hospital3.jpeg" class="smallPic" alt="내부사진3"></a></li>
+                    <li><a href="#"><img src="img/n_hospital4.jpeg" class="smallPic" alt="내부사진4"></a></li>
+                 </ul>
+             </div>
+             <div id="infoDetail">
+               <div class="small_p">
+                <p>진료시간 : 24시간 / 야간진료 가능/ 월~토</p>
+                <p>응급과장을 포함해 15명의 수의사 진료</p>
+                <p>기타 편의시설: 주차 / 엘레베이터</p>
+               </div>
+               <div class="big_p">
+                 <h3 class="h3_first">진료과목 : <span>외과/정형외과/흉부외과/신경외과/종양외과,호흡기내과,
+                  감염내과/안과/치과/산과/피부과</span></h3>
+                 <h3>전문치료 : <span>줄기세포/암센터/영상센터/수술센터/재활센터/건강검진</span></h3>
+                 <h3>특수장비 : <span>MRI/CT/혈청호르몬 분석기/정형외과 전문장비</span></h3> 
+               </div>
+               
+               <div class="tel fast_contact"><a href="#"><img src="img/tel.png" alt="전화하기" title="전화하기"></a></div>
+               <div class="kakaotalk fast_contact"><a href="#"><img src="img/kakaotalk.png" alt="카카오톡문의" title="카카오톡문의"></a></div>
+               <div class="info_btn" id="consulting"><a href="#">1:1 상담 신청하기</a></div>
+               <div class="info_btn" id="reservation"><a href="#">예약하기</a></div>
+             </div>
+             
+          </section>
+          <!--동물병원정보 섹션 시작 끝-->
+
+          <!--리뷰 섹션 시작-->
+          <section id="review">
+             <span id="score_letter" class="score">총점</span>
+             <span id="score_num" class="score">4.5/5</span>
+             <div class="reviewCanvas">
+                <div class="review_panel">
+                    <div class="review_box">
+                      <a href="#" class="review_list">
+                        <img src="img/review_star.png" alt="별점">
+                        <p>고양이 전문병원을 찾기가 쉽지 않았는데 
+                          예약 날짜 확인하고 진료 받고 왔습니다. 
+                          줄기전문 센터도 있어 노묘인 제 고양이에게 딱이었어요. 
+                          제가 받은 진료는 예방접종도 하면서 
+                          쓸개구 검사도 한꺼번에 하.... </p>
+                        </a>
+                    </div>
+                    <div class="review_box">
+                      <a href="#" class="review_list">
+                        <img src="img/review_star.png" alt="별점">
+                        <p>고양이 전문병원을 찾기가 쉽지 않았는데 
+                          예약 날짜 확인하고 진료 받고 왔습니다. 
+                          줄기전문 센터도 있어 노묘인 제 고양이에게 딱이었어요. 
+                          제가 받은 진료는 예방접종도 하면서 
+                          쓸개구 검사도 한꺼번에 하.... </p>
+                      </a>
+                    </div>
+                    <div class="review_box">
+                      <a href="#" class="review_list">
+                        <img src="img/review_star.png" alt="별점">
+                        <p>고양이 전문병원을 찾기가 쉽지 않았는데 
+                          예약 날짜 확인하고 진료 받고 왔습니다. 
+                          줄기전문 센터도 있어 노묘인 제 고양이에게 딱이었어요. 
+                          제가 받은 진료는 예방접종도 하면서 
+                          쓸개구 검사도 한꺼번에 하.... </p>
+                      </a>
+                    </div>
+                    <div class="review_box">
+                      <a href="#" class="review_list">
+                        <img src="img/review_star.png" alt="별점">
+                        <p>고양이 전문병원을 찾기가 쉽지 않았는데 
+                          예약 날짜 확인하고 진료 받고 왔습니다. 
+                          줄기전문 센터도 있어 노묘인 제 고양이에게 딱이었어요. 
+                          제가 받은 진료는 예방접종도 하면서 
+                          쓸개구 검사도 한꺼번에 하.... </p>
+                      </a>
+                    </div>
+                    <div class="review_box">
+                      <a href="#" class="review_list">
+                        <img src="img/review_star.png" alt="별점">
+                        <p>고양이 전문병원을 찾기가 쉽지 않았는데 
+                            예약 날짜 확인하고 진료 받고 왔습니다. 
+                            줄기전문 센터도 있어 노묘인 제 고양이에게 딱이었어요. 
+                            제가 받은 진료는 예방접종도 하면서 
+                            쓸개구 검사도 한꺼번에 하.... </p>
+                      </a>
+                    </div>
+                </div>
+                <div class="left_right_control_panel">
+                  <img class="left_btn" src="img/left_btn.png" alt="왼쪽버튼">
+                  <img class="right_btn"src="img/right_btn.png" alt="오른쪽버튼">
+                </div>
+             </div>
+             <div class="review_write_btn"><a href="#">리뷰 쓰기</a></div>
+          </section>
+          <!--리뷰 섹션 끝-->
+          <!--지도 섹션 시작-->
+          <section id="map">
+            <div id="map_img"><img src="img/n_hospital_map.png" alt="지도"></div>  
+            <div id="map_info">
+               <p id="address">주소 : <br>
+                <span>서울 특별시 노원구 노원로 408 N동물병원의료센터 노원점(상계동 318-2)</span>
+               </p>
+               <p id="bus">버스 정류장 이용시: <br>
+                <span>상계중학교 정문 - 64m( 지선 : 1132,1154,1167)</span>
+               </p>
+               <p id="subway">지하철 이용시: <br>
+                <span>노원역(7호선,4호선) -1번출구 - 도보 11분</span> <br>
+                <span>중계역(7호선) -1번출구 - 도보 17분</span> <br>
+                <span>상계역(4호선) -4번출구 - 도보 17분</span>
+               </p>
+            </div>
+            <div class="map_btn">
+                <a class="map_share" href="#"><img src="img/share.png" alt="공유하기">공유하기</a>
+                <a class="map_addr" href="#"><img src="img/addr_copy.png" alt="주소복사">주소복사</a>
+            </div>
+          </section>
+          <section class="up_btn">
+            <a href="#"><img src="img/up_btn.png" alt="상단이동버튼"></a>
+          </section>
+          <!--지도 섹션 끝-->
+        </div>
+        <!--컨텐츠영역 끝-->
+
+        <!--푸터 시작-->
+        <footer>
+          <ul class="bottomNav">
+            <li><a href="#">1:1온라인 상담</a></li>
+            <li><a href="#">24시간 응급실•펫택시</a></li>
+            <li><a href="#">예약하기</a></li>
+            <li><a href="#">내 주변 병원찾기</a></li>
+            <li><a href="#">로그인•회원가입</a></li>
+          </ul>
+          <div class="table">
+            <address>
+              <p>이름</p>
+              <p>서울특별시 종로구 중구 12길 33층 123호</p>
+              <p>공동대표. 김경민, 이초롱, 나은비, 황치연, 김소중</p>
+            </address>
+            <div class="custom">
+              <p>고객문의센터</p>
+              <a href="tel:010-111-2222"
+                >T. 1111-2222 (10:00 - 19:00 / 점심시간 12:30 - 13:30)</a
+              >
+              <a href="mailto:superman@test.com">E. everymal@gmail.com</a>
+            </div>
+            <div class="footBtn">
+              <a href="#">개인정보 처리방침</a>
+              <a href="#">이용약관</a>
+            </div>
+          </div>
+      </footer>
+  
+      
+        <!--푸터끝-->
+    </div>  
+    <script>
+      let index=0;
+    let sw=false;
+    let auto;
+    let mindex;
+    moveSlider(index);
+     $('.reviewCanvas').hover(function(){
+         clearInterval(auto); 
+    },function(){
+        autoSlider();
+    });
+
+    $('.left_btn').click(function(){
+        index--; 
+      moveSlider(index);
+    });
+    
+    $('.right_btn').click(function(){
+    
+    index++;
+        moveSlider(index);  
+    });
+    function moveSlider(index){
+    if(index > 0 && index <2){
+        $('.left_btn1').fadeIn(500);
+        $('.right_btn1').fadeIn(500);
+    }    
+    if(index==0){
+        $('.left_btn1').fadeOut(500);
+        $('.right_btn1').fadeIn(500);
+    } 
+    if(index==4){//------
+        $('.right_btn1').fadeOut(500);
+        $('.left_btn1').fadeIn(500);
+    }
+    $('.review_panel').animate({
+        left:-(index*370) 
+     },'slow');
+     $('.control_button').removeClass('active');
+     $('.control_button').eq(index).addClass('active'); 
+     $('.slider_text').hide();
+     $('.slider_text').eq(index).fadeIn('slow');
+    }
+
+      function autoSlider(){
+        //슬라이더 자동
+      auto=setInterval(function(){
+            if(index<2 && sw == false){//true가 아니란 뜻은 끝까지 안 왔다는 소리
+                $('.right_btn').trigger('click'); //2초마다 오른쪽 버튼 자동 틀릭 되도록
+            }else{
+                sw=true; //끝까지 왔다
+            }
+            if(index>0 && sw == true){
+                $('.left_btn').trigger('click');
+            }else{
+                sw=false;
+            }
+            },2000);
+          }
+    </script>  
+</body>
+</html>
