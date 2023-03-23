@@ -4,7 +4,7 @@
     width: 3%;
     top: 0;
     height: 100vh;
-    background-color: #f27f3d;
+    background-color: #333;
     z-index: 1000;
   }
 #contentArea{
@@ -39,7 +39,7 @@ fieldset{
     padding: 50px;
     border-radius: 10px;
     background-color: #ddd;
-    border: 4px solid #f27f3d;
+    border: 4px solid gold;
 }
 .login p{
     display: block;
@@ -93,3 +93,8 @@ fieldset{
 .find{
     left: 65px;
 }
+footer {
+    margin-top: auto;
+    background-color: #999;
+  }
+  
